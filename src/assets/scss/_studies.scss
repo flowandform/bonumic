@@ -1,0 +1,137 @@
+.studies {
+  padding-top: 120px;
+
+  .title {
+    display: inline-block;
+    color: $dark-grey;
+
+    &__text {
+      margin-left: $side-gutter;
+      line-height: 1;
+      font-weight: 500;
+      font-size: 48px;
+      border-bottom: 2px solid $blue-grey;
+    }
+  }
+
+  .featured-post {
+    display: block;
+    margin-top: 64px;
+    text-decoration: none;
+
+    .info {
+      margin-top: 36px;
+
+      > a {
+        text-decoration: none;
+      }
+    }
+
+    &__image {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1440px;
+      padding-left: $side-gutter;
+      padding-right: $side-gutter;
+    }
+
+    &__title {
+      font-size: 40px;
+      font-weight: 500;
+      line-height: 1.5em;
+      color: $dark-grey;
+    }
+
+    &__date {
+      margin-top: 16px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $blue-grey;
+    }
+  }
+}
+
+@include media(x-large) {
+  .studies {
+    .title {
+      &__text {
+        margin-left: $side-gutter-x-large;
+      }
+    }
+  }
+}
+
+@include media(mobile) {
+  .studies {
+    padding-top: 64px;
+    padding-bottom: 20px;
+
+    .title {
+      &__text {
+        margin-left: $side-gutter-mobile;
+        font-size: 28px;
+        border-bottom: 1px solid $blue-grey;
+      }
+    }
+
+    .featured-post {
+      margin-top: 48px;
+
+      .info {
+        margin-top: 20px;
+      }
+
+      &__image {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      &__title {
+        font-size: 24px;
+      }
+
+      &__date {
+        margin-top: 6px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@include media(tablet) {
+  .studies {
+    padding-top: 64px;
+    padding-bottom: 20px;
+
+    .title {
+      &__text {
+        margin-left: $side-gutter-tablet;
+        font-size: 42px;
+        border-bottom: 1px solid $blue-grey;
+      }
+    }
+
+    .featured-post {
+      margin-top: 40px;
+
+      .info {
+        margin-top: 20px;
+      }
+
+      &__image {
+        padding-left: $side-gutter-tablet;
+        padding-right: $side-gutter-tablet;
+      }
+
+      &__title {
+        font-size: 30px;
+      }
+
+      &__date {
+        margin-top: 9px;
+        font-size: 15px;
+      }
+    }
+  }
+}

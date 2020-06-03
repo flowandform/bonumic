@@ -1,0 +1,161 @@
+.content-overlay {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s;
+
+  &--on {
+    position: fixed;
+    pointer-events: initial;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: 0.3;
+    z-index: 3;
+  }
+}
+
+header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: $white;
+
+  .burger-menu {
+    overflow: hidden;
+    width: 100%;
+    transition: height 0.15s ease-in;
+    height: 0;
+    margin: 0;
+    background: $white;
+    list-style-type: none;
+
+    &__item {
+      margin-top: 26px;
+
+      &:first-child {
+        margin-top: 53px;
+      }
+
+      &:last-child {
+        margin-bottom: 33px;
+      }
+
+      > a {
+        padding: 10px;
+        padding-left: 0;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        color: $dark-grey;
+      }
+    }
+
+    &--opened {
+      height: 200px;
+      border-bottom: 1px solid $blue-grey;
+    }
+  }
+}
+
+.header {
+  display: flex;
+  padding: 62px 0;
+  justify-content: space-between;
+  align-items: center;
+  background: $white;
+
+  &__logo {
+    display: block;
+    width: 140px;
+  }
+
+  .navbar {
+    display: flex;
+    list-style-type: none;
+
+    .is-active {
+      border-bottom: 2px solid $blue-grey;
+    }
+
+    &__item {
+      height: 32px;
+      margin-left: 60px;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 2em;
+      letter-spacing: 2px;
+      color: $dark-grey;
+      text-decoration: none;
+      border-bottom: 2px solid $white;
+      transition: border 0.2s;
+    }
+  }
+
+  .burger-menu__icon {
+    display: none;
+    margin-right: -20px;
+    cursor: pointer;
+    padding: 10px 20px;
+
+    > div {
+      background: $dark-grey;
+      height: 2px;
+      width: 24px;
+
+      &:last-child {
+        margin-top: 4px;
+        background: $bonumic;
+      }
+    }
+  }
+}
+
+@include media(mobile) {
+  .content-overlay {
+    display: block;
+  }
+
+  header {
+    background: $white;
+  }
+
+  .header {
+    padding: 20px 0;
+
+    .burger-menu__icon {
+      display: block;
+    }
+
+    &__logo {
+      width: 108px;
+    }
+
+    .navbar {
+      &__item {
+        display: none;
+      }
+    }
+  }
+}
+
+.headroom {
+  transition: 0.2s padding ease-in;
+}
+
+.headroom--pinned,
+.headroom--unpinned {
+  padding: 20px 0;
+}
+
+.headroom--top {
+  padding: 62px 0;
+
+  @include media(mobile) {
+    padding: 20px 0;
+  }
+}

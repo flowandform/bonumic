@@ -1,0 +1,68 @@
+/*!
+Theme Name: Bonumic
+Text Domain: Bonumic
+Version: 1.01
+Decription: Real estate + machine learning
+Tags: real estate, ML, flownform, proptech
+Author: Flow and Form
+Author URI: https://flownform.com/
+*/
+
+@import "normalize";
+@import "colors";
+@import "variables";
+@import "node_modules/media-blender/media";
+
+$media-breakpoints: (
+  mobile: 0 767,
+  tablet: 768 1150,
+  x-large: 1440,
+);
+
+@import "header";
+@import "blog";
+@import "landing";
+@import "studies";
+@import "footer";
+@import "post-page";
+@import "about";
+@import "not-found";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: $side-gutter;
+  padding-right: $side-gutter;
+}
+
+@include media(mobile) {
+  .container {
+    padding-left: $side-gutter-mobile;
+    padding-right: $side-gutter-mobile;
+  }
+}
+
+@include media(tablet) {
+  .container {
+    padding-left: $side-gutter-tablet;
+    padding-right: $side-gutter-tablet;
+  }
+}

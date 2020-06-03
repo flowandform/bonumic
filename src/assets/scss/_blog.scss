@@ -1,0 +1,268 @@
+.blog {
+  margin-top: 64px;
+  padding-top: 128px;
+  background: $dark-grey;
+
+  &__title {
+    display: inline-block;
+    padding-bottom: 4px;
+    font-size: 40px;
+    font-weight: 500;
+    color: $white;
+    border-bottom: 2px $blue-grey solid;
+  }
+
+  .posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 120px;
+    padding-top: 70px;
+
+    &--front-page {
+      padding-top: 0;
+    }
+
+    .post {
+      max-width: 538px;
+      margin-top: 96px;
+      text-decoration: none;
+
+      .info {
+        margin-top: 36px;
+
+        > a {
+          text-decoration: none;
+        }
+      }
+
+      &:nth-child(-n + 2) {
+        margin-top: 0;
+      }
+
+      &__image {
+        display: block;
+        max-width: 100%;
+      }
+
+      &__title {
+        font-size: 32px;
+        font-weight: 500;
+        color: $white;
+        line-height: 1.5em;
+      }
+
+      &__date {
+        margin-bottom: 0;
+        margin-top: 8px;
+        font-size: 18px;
+        font-weight: 500;
+        color: $blue-grey;
+      }
+    }
+  }
+
+  .bonumic-info {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 128px;
+    margin-left: $side-gutter;
+
+    &__button {
+      display: block;
+      margin-left: auto;
+      padding: 33px 62px;
+      padding-right: $side-gutter;
+      background: $blue-grey;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: $white;
+      text-decoration: none;
+      opacity: 1;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #a1a1b1;
+      }
+
+      &:focus {
+        background-color: $blue-grey;
+        outline: solid 3px $white;
+        outline-offset: -3px;
+      }
+    }
+
+    &__description {
+      margin: 0;
+      font-size: 26px;
+      line-height: 1.62em;
+      color: $white;
+    }
+
+    &__provider {
+      margin: 0;
+      margin-top: 16px;
+      font-size: 18px;
+      font-weight: 500;
+      color: $blue-grey;
+    }
+  }
+}
+
+@include media(x-large) {
+  .blog {
+    .bonumic-info {
+      margin-left: $side-gutter-x-large;
+
+      &__button {
+        padding-right: 62px;
+        margin-right: $side-gutter-x-large;
+      }
+    }
+  }
+}
+
+@include media(mobile) {
+  .blog {
+    margin-top: 20px;
+    padding-top: 8px;
+
+    &__title {
+      padding-top: 64px;
+      padding-bottom: 7px;
+      font-size: 30px;
+    }
+
+    .posts {
+      display: block;
+      padding-top: 8px;
+
+      &--front-page {
+        padding-top: 0;
+      }
+
+      .post {
+        max-width: 100%;
+        margin-top: 48px;
+
+        .info {
+          margin-top: 20px;
+
+          > a {
+            text-decoration: none;
+          }
+        }
+
+        &:nth-child(-n + 2) {
+          margin-top: 48px;
+        }
+
+        &:first-child {
+          margin-top: 0;
+          padding-top: 48px;
+        }
+
+        &__title {
+          font-size: 24px;
+        }
+
+        &__date {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .bonumic-info {
+      display: block;
+      position: relative;
+      margin-top: 80px;
+      margin-left: $side-gutter-mobile;
+
+      &__button {
+        position: absolute;
+        right: 0;
+        bottom: -95px;
+        padding: 22px 42px;
+        font-size: 13px;
+      }
+
+      &__description {
+        max-width: 275px;
+        font-size: 18px;
+
+        > br {
+          display: none;
+        }
+      }
+
+      &__provider {
+        padding-bottom: 12px;
+        font-size: 14px;
+        line-height: 1.3em;
+      }
+    }
+  }
+}
+
+@include media(tablet) {
+  .blog {
+    margin-top: 20px;
+    padding-top: 68px;
+
+    &__title {
+      padding-bottom: 7px;
+      font-size: 36px;
+    }
+
+    .posts {
+      column-gap: $side-gutter-tablet;
+      padding-top: 50px;
+
+      &--front-page {
+        padding-top: 0;
+      }
+
+      .post {
+        margin-top: 60px;
+
+        .info {
+          margin-top: 20px;
+        }
+
+        &__title {
+          font-size: 30px;
+        }
+
+        &__date {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .bonumic-info {
+      margin-top: 100px;
+      margin-left: $side-gutter-tablet;
+
+      &__button {
+        font-size: 15px;
+        padding: 33px 62px;
+        padding-right: $side-gutter-tablet;
+        margin-left: auto;
+      }
+
+      &__description {
+        max-width: 620px;
+        padding-right: 20px;
+        font-size: 24px;
+
+        > br {
+          display: none;
+        }
+      }
+
+      &__provider {
+        font-size: 18px;
+      }
+    }
+  }
+}
