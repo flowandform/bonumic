@@ -1,5 +1,4 @@
 var merge = require("webpack-merge");
-var webpack = require("webpack");
 var path = require("path");
 var FileManagerPlugin = require("filemanager-webpack-plugin");
 
@@ -20,22 +19,19 @@ module.exports = merge(require("./webpack.common.js"), {
             destination: "./dist/bonumic/assets/images",
           },
           {
-            source: "./src/screenshot.png",
+            source: "./src/assets/screenshot/screenshot.png",
             destination: "./dist/bonumic/screenshot.png",
           },
-          { source: "./src/*.php", destination: "./dist/bonumic" },
+          { source: "./src/templates/*.php", destination: "./dist/bonumic" },
         ],
         mkdir: ["./dist/bonumic/assets/js"],
         move: [
           {
-            source: "./dist/bonumic/main.js",
+            source: "./src/scripts/main.js",
             destination: "./dist/bonumic/assets/js/main.js",
           },
-          {
-            source: "./dist/bonumic/main.js.map",
-            destination: "./dist/bonumic/assets/js/main.js.map",
-          },
         ],
+        delete: ["./dist/bonumic/main.js", "./dist/bonumic/main.js.map"],
         archive: [
           { source: "./dist/bonumic", destination: "./dist/bonumic.zip" },
         ],

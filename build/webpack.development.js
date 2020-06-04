@@ -25,15 +25,17 @@ module.exports = merge(require("./webpack.common.js"), {
             destination: "./html/wp-content/themes/bonumic/screenshot.png",
           },
           {
-            source: "./src/assets/js",
-            destination: "./html/wp-content/themes/bonumic/assets/js",
-          },
-          {
             source: "./src/*.php",
             destination: "./html/wp-content/themes/bonumic",
           },
         ],
-        delete: ["./html/wp-content/themes/bonumic/main.js"],
+        mkdir: ["./html/wp-content/themes/bonumic/assets/js"],
+        move: [
+          {
+            source: "./html/wp-content/themes/bonumic/main.js",
+            destination: "./html/wp-content/themes/bonumic/assets/js/main.js",
+          },
+        ],
       },
     }),
   ],
@@ -44,26 +46,6 @@ module.exports = merge(require("./webpack.common.js"), {
   devServer: {
     contentBase: path.resolve(__dirname, "../", "src"),
     compress: true,
-    port: 9000,
-    /**
-     * Watch for changes to PHP files and reload the page when one changes.
-     */
-    before(app, server) {
-      const files = ["src/*.php"];
-
-      chokidar
-        .watch(files, {
-          alwaysStat: true,
-          atomic: false,
-          followSymlinks: false,
-          ignoreInitial: true,
-          ignorePermissionErrors: true,
-          persistent: true,
-          usePolling: true,
-        })
-        .on("all", () => {
-          server.sockWrite(server.sockets, "content-changed");
-        });
-    },
+    port: 8000,
   },
 });
