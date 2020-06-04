@@ -1,7 +1,7 @@
 <footer>
   <div class="footer container">
     <a href="/">
-      <img class="footer__logo" srcset="/wp-content/themes/bonumic/assets/images/logo-white.png 1x, /wp-content/themes/bonumic/assets/images/logo-white@2x.png 2x" src="/wp-content/themes/bonumic/assets/images/logo-white.png" alt="logo" />
+      <img class="footer__logo" src="/wp-content/themes/bonumic/assets/images/logo-white.svg" alt="logo" />
     </a>
     <nav class="navbar">
       <a href="/" class="navbar__item <?php if (is_page('home')) echo 'is-active'; ?>">HOME</a>

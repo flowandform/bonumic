@@ -16,7 +16,7 @@
   <header>
     <div class="header js-headroom container">
       <a href="/">
-        <img class="header__logo" srcset="/wp-content/themes/bonumic/assets/images/logo-colour.png 1x, /wp-content/themes/bonumic/assets/images/logo-colour@2x.png 2x" src="/wp-content/themes/bonumic/assets/images/logo-with-text-color.png" alt="logo" />
+        <img class="header__logo" src="/wp-content/themes/bonumic/assets/images/logo-colour.svg" alt="logo" />
       </a>
       <nav class="navbar">
         <a href="/" class="navbar__item <?php if (is_page('home')) echo 'is-active'; ?>">HOME</a>
