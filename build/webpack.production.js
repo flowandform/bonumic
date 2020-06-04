@@ -19,17 +19,14 @@ module.exports = merge(require("./webpack.common.js"), {
             destination: "./dist/bonumic/assets/images",
           },
           {
+            source: "./src/scripts/main.js",
+            destination: "./dist/bonumic/assets/js/main.js",
+          },
+          {
             source: "./src/assets/screenshot/screenshot.png",
             destination: "./dist/bonumic/screenshot.png",
           },
           { source: "./src/templates/*.php", destination: "./dist/bonumic" },
-        ],
-        mkdir: ["./dist/bonumic/assets/js"],
-        move: [
-          {
-            source: "./src/scripts/main.js",
-            destination: "./dist/bonumic/assets/js/main.js",
-          },
         ],
         delete: ["./dist/bonumic/main.js", "./dist/bonumic/main.js.map"],
         archive: [

@@ -1,12 +1,13 @@
 var merge = require("webpack-merge");
 var path = require("path");
-const chokidar = require("chokidar");
+var BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 var FileManagerPlugin = require("filemanager-webpack-plugin");
+var CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = merge(require("./webpack.common.js"), {
   mode: "development",
   watch: true,
-  devtool: "eval-source-map",
+  devtool: "source-map",
 
   plugins: [
     new FileManagerPlugin({
@@ -21,31 +22,48 @@ module.exports = merge(require("./webpack.common.js"), {
             destination: "./html/wp-content/themes/bonumic/assets/images",
           },
           {
-            source: "./src/screenshot.png",
+            source: "./src/assets/screenshot/screenshot.png",
             destination: "./html/wp-content/themes/bonumic/screenshot.png",
           },
           {
-            source: "./src/*.php",
+            source: "./src/templates/*.php",
             destination: "./html/wp-content/themes/bonumic",
           },
-        ],
-        mkdir: ["./html/wp-content/themes/bonumic/assets/js"],
-        move: [
           {
-            source: "./html/wp-content/themes/bonumic/main.js",
+            source: "./src/scripts/main.js",
             destination: "./html/wp-content/themes/bonumic/assets/js/main.js",
           },
         ],
       },
     }),
+    new CopyPlugin({
+      patterns: [
+        { from: "./src/templates", to: "./html/wp-content/themes/bonumic" },
+      ],
+    }),
+    new BrowserSyncPlugin(
+      {
+        host: "localhost",
+        port: 3000,
+        proxy: "localhost:8000", // devserver
+        files: ["./html/wp-content/themes/bonumic/*.php", "./src"],
+      },
+      {
+        // prevent BrowserSync from reloading the page
+        // and let Webpack Dev Server take care of this
+        reload: true,
+      }
+    ),
   ],
   output: {
     path: path.resolve(__dirname, "../", "html/wp-content/themes/bonumic"),
     publicPath: "/",
   },
   devServer: {
-    contentBase: path.resolve(__dirname, "../", "src"),
-    compress: true,
+    contentBase: "./src",
+    writeToDisk: true,
+    hot: true,
+    host: "0.0.0.0",
     port: 8000,
   },
 });

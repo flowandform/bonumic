@@ -1,4 +1,3 @@
-var path = require("path");
 var { CleanWebpackPlugin } = require("clean-webpack-plugin");
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
@@ -11,6 +10,9 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === "development",
+            },
           },
           "css-loader",
           {
