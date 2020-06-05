@@ -4,7 +4,7 @@ get_header()
 <main class="landing">
   <div class="landing__banner banner">
     <section class="banner__description description">
-      <h1 class="description__title">Real estate <br class="break break--1"> <span>+</span> <br class="break break--2"> machine <br class="break break--3"> learning.</h1>
+      <h1 class="description__title">Building a <span class="break break--1">better world</h1>
       <a href="/about" class="description__button">LEARN MORE</a>
     </section>
     <section class="banner__image image">
@@ -23,18 +23,22 @@ get_header()
 </main>
 <div class="container">
   <div class="landing__information information">
+    <h2 class="information__text">
+      Discovering the path to advanced artificial <span class="break"></span> intelligence
+      in the real estate industry.
+    </h2>
     <div class="eu-badge"></div>
-    <div class="information__links links">
+    <!-- <div class="information__links links">
       <a class="links__item" href="https://www.facebook.com/flownform/">Facebook</a>
       <a class="links__item" href="https://twitter.com/flownform?lang=en">Twitter</a>
       <a class="links__item" href="https://www.linkedin.com/company/flowandform/">Linkedin</a>
-    </div>
+    </div> -->
   </div>
   <div class="information__border"></div>
 </div>
 <section class="studies" id="featured">
   <div class="studies__title title">
-    <h2 class="title__text">Our case studies</h2>
+    <h2 class="title__text">Exploring possibilities</h2>
   </div>
   <?php
   $args = array(

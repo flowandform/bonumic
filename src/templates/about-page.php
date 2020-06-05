@@ -7,11 +7,11 @@ Template Name: About Page
 get_header()
 ?>
 <main class="about-main">
-  <img src="/wp-content/themes/bonumic/assets/images/people.jpg" alt="people" class="image-left">
+  <img src="/wp-content/themes/bonumic/assets/images/about-up.jpg" alt="people" class="image-left">
   <section class="commercial container">
     <h2 class="commercial__description">
-      <span>Bonumic</span> is an open source platform for sharing ML models and datasets
-      in the PropTech industry.
+      Bonumic is an AI development and research project based in Europe, Croatia.
+      Our mission is to advance the real estate industry by leveraging aritficial intelligence.
     </h2>
     <div class="commercial__dots">
       <div class="dot"></div>
@@ -20,23 +20,26 @@ get_header()
   </section>
   <section class="info container">
     <article class="info__block block">
-      <h3 class="block__title">Why Bonumic</h3>
-      <p class="block__description">Commercial real estate is a broker-based industry that suffers from
-        a lack of a reliable source of information. A single, searchable database/inventory
-        does not exist.</p>
+      <h3 class="block__title">Why Bonumic?</h3>
+      <p class="block__description">Real estate is one of the slowest industries in technology adoption.
+        We lack structured data, research and basic knowledge funding to make the next leap - we are here to
+        begin that journey.
+
+      </p>
     </article>
     <article class="info__block block">
       <h3 class="block__title">Potential</h3>
-      <p class="block__description">Commercial real estate is a broker-based industry that suffers from
-        a lack of a reliable source of information. A single, searchable database/inventory
-        does not exist.</p>
+      <p class="block__description">With over $219 trillion in market size, real estate is the world largest
+        asset class. Over many decades we built repetative and redundant processes across all verticals in
+        the property business. With the right vision and talent in place, we can move the needle.
+      </p>
     </article>
   </section>
   <section class="website">
-    <img src="/wp-content/themes/bonumic/assets/images/skateboard.jpg" alt="skateboard" class="website__image">
+    <img src="/wp-content/themes/bonumic/assets/images/about-down.png" alt="sun over city" class="website__image">
     <section class="website__content content">
       <h4 class="content__description">Bonumic is brought to you by <span>Flow and Form</span>,
-        a team of maverick talents pushing the limits of PropTech.</h4>
+        a team behind the leading property innovation studio.</h4>
       <a href="https://flownform.com/" class="content__button">
         OUR WEBSITE
       </a>

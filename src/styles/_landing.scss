@@ -49,16 +49,8 @@
         margin-bottom: -25px;
         color: $dark-grey;
 
-        span {
-          color: $bonumic;
-        }
-
         .break {
-          display: none;
-
-          &--2 {
-            display: block;
-          }
+          display: block;
         }
       }
 
@@ -97,8 +89,22 @@
   justify-content: flex-start;
   align-items: center;
 
-  &__links {
-    margin-left: auto;
+  &__text {
+    font-size: 18px;
+    font-weight: 700;
+    color: $blue-grey;
+
+    .break {
+      display: block;
+
+      @include media(mobile) {
+        display: none;
+      }
+    }
+
+    @include media(mobile) {
+      margin-bottom: 32px;
+    }
   }
 
   &__border {
@@ -285,7 +291,7 @@
     padding-bottom: 20px;
 
     &__text {
-      font-size: 15px;
+      font-size: 18px;
     }
 
     &__links {
