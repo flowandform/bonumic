@@ -66,3 +66,38 @@ h5 {
     padding-right: $side-gutter-tablet;
   }
 }
+
+.eu-badge {
+  height: 32px;
+  width: 286px;
+  background: url("/wp-content/themes/bonumic/assets/images/cef-eu-black.svg")
+    no-repeat;
+
+  &--white {
+    margin-left: auto;
+    background: url("/wp-content/themes/bonumic/assets/images/cef-eu-white.svg")
+      no-repeat;
+  }
+
+  &--desktop {
+    display: block;
+
+    @include media(mobile tablet) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+    margin-bottom: 46px;
+    margin-left: $side-gutter-mobile;
+
+    @include media(tablet) {
+      margin-left: $side-gutter-tablet;
+    }
+
+    @include media(mobile tablet) {
+      display: block;
+    }
+  }
+}

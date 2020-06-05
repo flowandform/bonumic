@@ -12,8 +12,8 @@ get_header()
       <img class="image__original" srcset="/wp-content/themes/bonumic/assets/images/landing-original.jpg 1x, /wp-content/themes/bonumic/assets/images/landing-original@2x.jpg 2x" src="/wp-content/themes/bonumic/assets/images/landing-original.jpg" alt="landing">
       <img class="image__mobile" srcset="/wp-content/themes/bonumic/assets/images/landing-mobile.jpg 1x, /wp-content/themes/bonumic/assets/images/landing-mobile@2x.jpg 2x" src="/wp-content/themes/bonumic/assets/images/landing-mobile.jpg" alt="landing">
       <div class="image__mask">
-        <svg viewBox="0 0 1320 496" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <svg viewBox="0 0 1320 496">
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
             <path d="M0,496 L0,341 L660,341 L660,0 L780,0 L780,496 L0,496 Z" id="Combined-Shape" fill="#F7F7F7"></path>
           </g>
         </svg>
@@ -23,7 +23,7 @@ get_header()
 </main>
 <div class="container">
   <div class="landing__information information">
-    <h2 class="information__text">A Flow and Form product.</h2>
+    <div class="eu-badge"></div>
     <div class="information__links links">
       <a class="links__item" href="https://www.facebook.com/flownform/">Facebook</a>
       <a class="links__item" href="https://twitter.com/flownform?lang=en">Twitter</a>
@@ -47,7 +47,7 @@ get_header()
     $query->the_post(); ?>
     <section class="studies__featured-post featured-post">
       <a href=<?php echo get_permalink(); ?>>
-        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE);?>" class="featured-post__image">
+        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>" class="featured-post__image">
       </a>
       <section class="info container">
         <a class="featured-post__title" href=<?php echo get_permalink(); ?>>
@@ -81,7 +81,7 @@ get_header()
         <?php while ($result->have_posts()) : $result->the_post(); ?>
           <section class="posts__post post">
             <a href=<?php echo get_permalink(); ?>>
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE);?>" class="post__image">
+              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>" class="post__image">
             </a>
             <section class="info">
               <a href=<?php echo get_permalink(); ?> class="post__title">
