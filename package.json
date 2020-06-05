@@ -6,8 +6,8 @@
   "author": "Flow and Form",
   "license": "MIT",
   "scripts": {
-    "start": "webpack --config build/webpack.development.js",
-    "build": "webpack --config build/webpack.production.js"
+    "start": "webpack --config webpack/webpack.development.js",
+    "build": "webpack --config webpack/webpack.production.js"
   },
   "browserslist": [
     "defaults",

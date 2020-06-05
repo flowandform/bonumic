@@ -30,13 +30,19 @@
     </div>
     <ul class="burger-menu">
       <li class="burger-menu__item">
-        <a href="/">HOME</a>
+        <a href="/" class="link">
+          <div class="link__name">HOME</div>
+        </a>
       </li>
       <li class="burger-menu__item">
-        <a href="/about">ABOUT</a>
+        <a href="/about" class="link">
+          <div class="link__name">ABOUT</div>
+        </a>
       </li>
       <li class="burger-menu__item">
-        <a href="mailto:hi@bonumic.com">CONTACT</a>
+        <a href="mailto:hi@bonumic.com" class="link">
+          <div class="link__name">CONTACT</div>
+        </a>
       </li>
     </ul>
   </header>

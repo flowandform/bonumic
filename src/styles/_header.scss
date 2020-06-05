@@ -33,9 +33,16 @@ header {
     margin: 0;
     background: $white;
     list-style-type: none;
+    padding-inline-start: 0;
 
     &__item {
       margin-top: 16px;
+
+      .link {
+        &__name {
+          margin-left: $side-gutter-mobile;
+        }
+      }
 
       &:first-child {
         margin-top: 53px;
