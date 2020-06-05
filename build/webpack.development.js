@@ -1,8 +1,6 @@
 var merge = require("webpack-merge");
 var path = require("path");
-var BrowserSyncPlugin = require("browser-sync-webpack-plugin");
 var FileManagerPlugin = require("filemanager-webpack-plugin");
-var CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = merge(require("./webpack.common.js"), {
   mode: "development",
@@ -36,34 +34,9 @@ module.exports = merge(require("./webpack.common.js"), {
         ],
       },
     }),
-    new CopyPlugin({
-      patterns: [
-        { from: "./src/templates", to: "./html/wp-content/themes/bonumic" },
-      ],
-    }),
-    new BrowserSyncPlugin(
-      {
-        host: "localhost",
-        port: 3000,
-        proxy: "localhost:8000", // devserver
-        files: ["./html/wp-content/themes/bonumic/*.php", "./src"],
-      },
-      {
-        // prevent BrowserSync from reloading the page
-        // and let Webpack Dev Server take care of this
-        reload: true,
-      }
-    ),
   ],
   output: {
     path: path.resolve(__dirname, "../", "html/wp-content/themes/bonumic"),
     publicPath: "/",
-  },
-  devServer: {
-    contentBase: "./src",
-    writeToDisk: true,
-    hot: true,
-    host: "0.0.0.0",
-    port: 8000,
   },
 });

@@ -6,7 +6,7 @@
   "author": "Flow and Form",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_ENV=development webpack-dev-server --config build/webpack.development.js",
+    "start": "webpack --config build/webpack.development.js",
     "build": "webpack --config build/webpack.production.js"
   },
   "browserslist": [
@@ -17,7 +17,6 @@
     "autoprefixer": "^9.8.0",
     "browser-sync": "^2.26.7",
     "browser-sync-webpack-plugin": "^2.2.2",
-    "chokidar": "^3.4.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.0.2",
     "css-loader": "^3.5.3",
@@ -29,7 +28,6 @@
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0",
-    "webpack-livereload-plugin": "^2.3.0",
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
