@@ -1,5 +1,6 @@
 var merge = require("webpack-merge");
 var path = require("path");
+const CopyPlugin = require("copy-webpack-plugin");
 var FileManagerPlugin = require("filemanager-webpack-plugin");
 
 module.exports = merge(require("./webpack.common.js"), {
@@ -33,6 +34,11 @@ module.exports = merge(require("./webpack.common.js"), {
           },
         ],
       },
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: "./src/templates", to: "./html/wp-content/themes/bonumic" },
+      ],
     }),
   ],
   output: {
