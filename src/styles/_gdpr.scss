@@ -22,6 +22,17 @@
   font-family: "DM Sans", sans-serif !important;
   font-weight: 700 !important;
   border-radius: 0;
+
+  &:hover {
+    opacity: 1;
+    background-color: #472eff !important;
+    border-color: #472eff !important;
+  }
+
+  &:focus {
+    background-color: $bonumic !important;
+    border-color: #ffffff !important;
+  }
 }
 
 #ct-ultimate-gdpr-cookie-popup.ct-ultimate-gdpr-cookie-popup-classic.ct-ultimate-gdpr-cookie-classic-blue
@@ -29,6 +40,12 @@
   font-family: "DM Sans", sans-serif !important;
   font-weight: 700 !important;
   border-radius: 0;
+
+  &:hover {
+    background: transparent !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
 }
 
 #ct-ultimate-gdpr-cookie-popup.ct-ultimate-gdpr-cookie-popup-classic.ct-ultimate-gdpr-cookie-classic-blue
@@ -40,12 +57,31 @@
   border-radius: 0;
 
   &:hover {
-    color: #ffffff !important;
+    opacity: 1;
     background-color: #a1a1b1 !important;
     border-color: #a1a1b1 !important;
   }
 
   &:focus {
+    border-color: #ffffff !important;
+  }
+}
+
+.ct-ultimate-gdpr-cookie-modal-btn a {
+  background: $bonumic;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  border-radius: 0;
+
+  &:hover {
+    background-color: #472eff !important;
+    border-color: #472eff !important;
+    opacity: 1;
+    color: #ffffff !important;
+  }
+
+  &:focus {
+    background-color: $bonumic !important;
     border-color: #ffffff !important;
   }
 }
