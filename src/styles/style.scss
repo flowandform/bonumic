@@ -27,6 +27,7 @@ $media-breakpoints: (
 @import "post-page";
 @import "about";
 @import "not-found";
+@import "gdpr";
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -48,9 +49,10 @@ h5 {
 
 .container {
   max-width: 1440px;
-  margin: 0 auto;
-  padding-left: $side-gutter;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: $side-gutter;
+  padding-left: $side-gutter;
 }
 
 @include media(mobile) {

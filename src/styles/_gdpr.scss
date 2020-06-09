@@ -1,0 +1,51 @@
+.gdpr-content {
+  margin-top: $navbar-height-large;
+
+  > strong {
+    font-size: 22px;
+  }
+
+  > p {
+    font-size: 22px;
+  }
+}
+
+#ct-ultimate-gdpr-cookie-popup.ct-ultimate-gdpr-cookie-popup-classic
+  #ct-ultimate-gdpr-cookie-content {
+  font-family: "DM Sans", sans-serif !important;
+}
+
+#ct-ultimate-gdpr-cookie-popup.ct-ultimate-gdpr-cookie-popup-classic.ct-ultimate-gdpr-cookie-classic-blue
+  #ct-ultimate-gdpr-cookie-accept {
+  background-color: $bonumic !important;
+  border-color: $bonumic !important;
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 700 !important;
+  border-radius: 0;
+}
+
+#ct-ultimate-gdpr-cookie-popup.ct-ultimate-gdpr-cookie-popup-classic.ct-ultimate-gdpr-cookie-classic-blue
+  #ct-ultimate-gdpr-cookie-change-settings {
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 700 !important;
+  border-radius: 0;
+}
+
+#ct-ultimate-gdpr-cookie-popup.ct-ultimate-gdpr-cookie-popup-classic.ct-ultimate-gdpr-cookie-classic-blue
+  #ct-ultimate-gdpr-cookie-read-more {
+  background: $blue-grey !important;
+  outline: none;
+  font-family: "DM Sans", sans-serif !important;
+  font-weight: 700 !important;
+  border-radius: 0;
+
+  &:hover {
+    color: #ffffff !important;
+    background-color: #a1a1b1 !important;
+    border-color: #a1a1b1 !important;
+  }
+
+  &:focus {
+    border-color: #ffffff !important;
+  }
+}
