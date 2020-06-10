@@ -1,0 +1,77 @@
+.newsletter {
+  padding-top: 77px;
+  padding-bottom: 120px;
+
+  @include media(tablet large x-large) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 130px 0;
+  }
+
+  @include media(tablet) {
+    column-gap: $side-gutter-tablet;
+  }
+
+  @include media(large x-large) {
+    column-gap: $side-gutter;
+  }
+
+  .column {
+    &__title {
+      display: inline-block;
+      color: $dark-grey;
+      font-size: 30px;
+      font-weight: 500;
+      border-bottom: 1px solid $blue-grey;
+    }
+
+    &__text {
+      margin-top: 48px;
+      font-size: 18px;
+      line-height: 1.65em;
+      color: $dark-grey;
+    }
+  }
+
+  .form {
+    margin-top: 50px;
+
+    @include media(tablet large x-large) {
+      margin-top: 0;
+    }
+
+    &__input {
+      width: 100%;
+      padding: 10px 0;
+      background: $white;
+      border: none;
+      border-bottom: 2px solid $blue-grey;
+
+      &::placeholder {
+        font-size: 18px;
+        color: $blue-grey;
+        font-weight: 500;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &__button {
+      margin-top: 40px;
+      padding: 22px 48px;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      background-color: #828285;
+      color: #e7e7ea;
+      border: solid 3px #828285;
+      transition: background-color border-color 0.2s ease-in;
+
+      &:hover {
+        border-color: $white;
+      }
+    }
+  }
+}

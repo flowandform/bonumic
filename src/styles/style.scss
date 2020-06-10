@@ -16,6 +16,7 @@ Author URI: https://flownform.com/
 $media-breakpoints: (
   mobile: 0 767,
   tablet: 768 1150,
+  large: 1151 1439,
   x-large: 1440,
 );
 
@@ -28,6 +29,7 @@ $media-breakpoints: (
 @import "about";
 @import "not-found";
 @import "gdpr";
+@import "newsletter";
 
 * {
   -webkit-font-smoothing: antialiased;
