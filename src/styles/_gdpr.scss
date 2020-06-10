@@ -1,12 +1,74 @@
-.gdpr-content {
+.gdpr {
   margin-top: $navbar-height-large;
 
-  > strong {
-    font-size: 22px;
+  @include media(mobile) {
+    margin-top: $navbar-height-mobile;
   }
 
-  > p {
+  &__title {
+    font-size: 80px;
+    font-weight: 700;
+
+    @include media(mobile) {
+      padding-top: 63px;
+      font-size: 40px;
+      line-height: 1.25em;
+    }
+  }
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 144px;
+
+  @include media(mobile) {
+    margin-bottom: 64px;
+  }
+
+  &__title {
+    margin-top: 80px;
+    font-size: 40px;
+    font-weight: 500;
+    color: $dark-grey;
+
+    @include media(mobile) {
+      margin-top: 40px;
+      font-size: 30px;
+      line-height: 1.42;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 500;
+
+    @include media(mobile) {
+      margin-top: 24px;
+      font-size: 24px;
+      line-height: 1.25em;
+    }
+  }
+
+  &__text {
+    margin-top: 16px;
+    margin-bottom: 0;
+    line-height: 1.64em;
     font-size: 22px;
+    color: $dark-grey;
+
+    @include media(mobile) {
+      font-size: 18px;
+      line-height: 1.64em;
+    }
+    > a {
+      color: $dark-grey;
+    }
+
+    > span {
+      display: block;
+    }
   }
 }
 
@@ -31,7 +93,7 @@
 
   &:focus {
     background-color: $bonumic !important;
-    border-color: #ffffff !important;
+    border-color: $white !important;
   }
 }
 
@@ -43,8 +105,8 @@
 
   &:hover {
     background: transparent !important;
-    color: #ffffff !important;
-    border-color: #ffffff !important;
+    color: $white !important;
+    border-color: $white !important;
   }
 }
 
@@ -63,7 +125,7 @@
   }
 
   &:focus {
-    border-color: #ffffff !important;
+    border-color: $white !important;
   }
 }
 
@@ -77,11 +139,11 @@
     background-color: #472eff !important;
     border-color: #472eff !important;
     opacity: 1;
-    color: #ffffff !important;
+    color: $white !important;
   }
 
   &:focus {
     background-color: $bonumic !important;
-    border-color: #ffffff !important;
+    border-color: $white !important;
   }
 }
