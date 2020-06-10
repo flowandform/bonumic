@@ -1,67 +1,83 @@
 footer {
   background: $dark-grey;
-  padding-top: 128px;
-
-  @include media(tablet) {
-    padding-top: 84px;
-  }
 }
 
 .footer {
   display: flex;
-  align-items: center;
-  padding-bottom: 43px;
+  padding-top: 80px;
+  padding-bottom: 92px;
+  border-top: 2px solid #565661;
+
+  @include media(mobile) {
+    display: block;
+    padding-top: 48px;
+    padding-bottom: 62px;
+  }
 
   &__logo {
     display: block;
     width: 140px;
+
+    @include media(mobile) {
+      width: 108px;
+    }
   }
 
   .navbar {
     display: flex;
+    margin-left: auto;
     list-style-type: none;
 
-    @include media(tablet) {
-      margin-left: auto;
+    @include media(mobile) {
+      margin-top: 56px;
     }
 
-    .is-active {
-      border-bottom: 2px solid $blue-grey;
+    .column {
+      margin-left: 105px;
+
+      @include media(tablet) {
+        margin-left: 35px;
+      }
+
+      @include media(mobile) {
+        margin-left: 0;
+      }
+
+      &--last {
+        margin-right: 146px;
+
+        @include media(tablet) {
+          margin-right: 0px;
+        }
+
+        @include media(mobile) {
+          margin-right: 0px;
+          margin-left: 34px;
+        }
+      }
     }
 
     &__item {
-      height: 32px;
-      margin-left: 60px;
+      margin-top: 16px;
       font-size: 14px;
       font-weight: bold;
       line-height: 2.29;
       letter-spacing: 2px;
-      color: $blue-grey;
-      text-decoration: none;
-      border-bottom: 2px solid $dark-grey;
-      transition: border 0.2s;
-    }
-  }
-}
+      color: $white;
 
-@include media(mobile) {
-  footer {
-    margin-top: -1px;
-    background: $dark-grey;
-    padding-top: 50px;
-  }
+      .link {
+        text-decoration: none;
+        color: $white;
 
-  .footer {
-    display: flex;
+        &--last {
+          text-decoration: none;
+          color: $blue-grey;
+        }
+      }
 
-    &__logo {
-      display: block;
-      width: 108px;
-    }
-
-    .navbar {
-      &__item {
-        display: none;
+      &--first {
+        padding-top: 0;
+        margin-top: 0;
       }
     }
   }

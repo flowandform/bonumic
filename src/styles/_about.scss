@@ -72,6 +72,11 @@
   .website {
     position: relative;
     background: $dark-grey;
+    padding-bottom: 144px;
+
+    @include media(tablet) {
+      padding-bottom: 100px;
+    }
 
     &__image {
       display: block;
@@ -230,7 +235,7 @@
         &__button {
           position: absolute;
           right: 0;
-          bottom: -172px;
+          bottom: -97px;
           padding: 22px 36px;
           font-size: 13px;
         }
@@ -284,7 +289,6 @@
 
       .content {
         margin-top: 56px;
-        padding-bottom: 5px;
         margin-left: $side-gutter-tablet;
         align-items: center;
 

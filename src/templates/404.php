@@ -40,7 +40,7 @@ get_header();
         <?php while ($result->have_posts()) : $result->the_post(); ?>
           <section class="posts__post post">
             <a href=<?php echo get_permalink(); ?>>
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE);?>" class="post__image">
+              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>" class="post__image">
             </a>
             <section class="info">
               <a href=<?php echo get_permalink(); ?> class="post__title">
@@ -63,6 +63,7 @@ get_header();
     </div>
     <a href="/about" class="bonumic-info__button">LEARN MORE</a>
   </section>
-  <?php
-  get_footer();
-  ?>
+</section>
+<?php
+get_footer();
+?>
