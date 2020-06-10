@@ -23,9 +23,22 @@ function fnf_register_scripts()
 
 add_action('wp_enqueue_scripts', 'fnf_register_scripts');
 
+function fnf_hook_javascript_footer()
+{
+?>
+  <script id="mcjs">
+    ! function(c, h, i, m, p) {
+      m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+    }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/657d5e4797948b82a9a6a5e12/e7bbdf41a86379fd9825661c2.js");
+  </script>
+<?php
+}
+
+add_action('wp_footer', 'fnf_hook_javascript_footer');
+
 add_theme_support('post-thumbnails');
 
-function add_favicon()
+function fnf_add_favicon()
 {
   echo '<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/bonumic/assets/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/wp-content/themes/bonumic/assets/favicon/favicon-32x32.png">
@@ -36,4 +49,4 @@ function add_favicon()
   <meta name="theme-color" content="#f7f7f7">';
 }
 
-add_action('wp_head', 'add_favicon');
+add_action('wp_head', 'fnf_add_favicon');
