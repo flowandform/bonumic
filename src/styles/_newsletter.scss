@@ -1,3 +1,7 @@
+.newsletter-section {
+  background-color: #e7e7ea;
+}
+
 .newsletter {
   padding-top: 77px;
   padding-bottom: 120px;
@@ -17,6 +21,14 @@
   }
 
   .column {
+    &--second {
+      margin-top: 50px;
+
+      @include media(tablet large x-large) {
+        margin-top: 0;
+      }
+    }
+
     &__title {
       display: inline-block;
       color: $dark-grey;
@@ -41,11 +53,18 @@
     }
 
     &__input {
-      width: 100%;
-      padding: 10px 0;
-      background: $white;
+      width: calc(100% - 20px);
+      padding-bottom: 10px;
       border: none;
       border-bottom: 2px solid $blue-grey;
+      background-color: #e7e7ea;
+      color: $dark-grey;
+      font-size: 18px;
+      font-weight: 500;
+
+      @include media(tablet large x-large) {
+        font-size: 22px;
+      }
 
       &::placeholder {
         font-size: 18px;
@@ -60,18 +79,75 @@
 
     &__button {
       margin-top: 40px;
-      padding: 22px 48px;
+      padding: 17px 59px;
       text-transform: uppercase;
       font-size: 13px;
       font-weight: 700;
-      background-color: #828285;
+      letter-spacing: 0.1em;
+      background-color: $dark-grey;
       color: #e7e7ea;
-      border: solid 3px #828285;
+      border: solid 3px $dark-grey;
       transition: background-color border-color 0.2s ease-in;
 
+      @include media(tablet large x-large) {
+        font-size: 16px;
+        padding: 20px 59px;
+      }
+
+      @include media(large x-large) {
+        margin-top: 0;
+      }
+
       &:hover {
-        border-color: $white;
+        background-color: #363639;
+      }
+
+      &:focus {
+        background-color: $dark-grey;
+        border-color: $blue-grey;
       }
     }
+  }
+}
+
+#mc_embed_signup div.mce_inline_error {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  background-color: #e7e7ea !important;
+  color: $blue-grey !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.response {
+  line-height: 1.5em;
+
+  a {
+    color: $blue-grey !important;
+  }
+}
+
+#mc_embed_signup {
+  #mce-success-response {
+    margin-top: 24px;
+    font-size: 14px;
+    color: $dark-grey;
+
+    @include media(large x-large) {
+      margin-top: 3px;
+      margin-left: 24px;
+      font-size: 18px;
+    }
+  }
+}
+
+.flex {
+  display: block;
+
+  @include media(large x-large) {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
   }
 }
