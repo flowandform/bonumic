@@ -139,7 +139,7 @@
 
 @include media(mobile) {
   .blog {
-    margin-top: 20px;
+    margin-top: 0;
     padding-top: 8px;
 
     &__title {

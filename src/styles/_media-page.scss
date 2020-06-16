@@ -1,0 +1,230 @@
+.media {
+  margin-top: $navbar-height-mobile;
+  padding-top: 63px;
+  padding-bottom: 96px;
+
+  @include media(tablet large x-large) {
+    margin-top: $navbar-height-large;
+  }
+
+  &__title {
+    color: $dark-grey;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.25em;
+
+    @include media(tablet large x-large) {
+      font-size: 80px;
+    }
+  }
+
+  .logo {
+    margin-top: 48px;
+
+    @include media(tablet large x-large) {
+      margin-top: 64px;
+    }
+
+    &__title {
+      display: inline-block;
+      padding-bottom: 4px;
+      font-size: 30px;
+      font-weight: 500;
+      color: $dark-grey;
+      border-bottom: 1px solid #898996;
+
+      @include media(tablet large x-large) {
+        padding-bottom: 6px;
+        font-size: 40px;
+        border-bottom: 2px solid #898996;
+      }
+    }
+  }
+
+  .columns {
+    @include media(tablet large x-large) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    @include media(tablet) {
+      column-gap: $side-gutter-tablet;
+    }
+
+    @include media(large x-large) {
+      column-gap: $side-gutter;
+    }
+  }
+
+  .column {
+    &--first {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      margin-top: 48px;
+      background: $dark-grey;
+
+      @include media(tablet large x-large) {
+        height: 337px;
+      }
+    }
+
+    &--second {
+      margin-top: 32px;
+    }
+
+    &__image {
+      width: 108px;
+      height: 31px;
+
+      @include media(tablet large x-large) {
+        width: 200px;
+        height: 60px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 1.65em;
+      color: $dark-grey;
+
+      @include media(tablet large x-large) {
+        font-size: 22px;
+      }
+    }
+
+    &__subtext {
+      margin-top: 24px;
+      font-size: 14px;
+      color: #898996;
+      line-height: 1.45em;
+
+      @include media(tablet large x-large) {
+        font-size: 18px;
+      }
+    }
+
+    &__button {
+      display: inline-block;
+      margin-top: 41px;
+      padding: 19px 43px;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.1em;
+      background-color: $dark-grey;
+      color: $white;
+      border: solid 3px $dark-grey;
+      transition: background-color 0.2s ease-in;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #363639;
+      }
+
+      &:focus {
+        outline: none;
+        background-color: $dark-grey;
+      }
+    }
+  }
+
+  .photos,
+  .website {
+    margin-top: 72px;
+
+    @include media(tablet large x-large) {
+      margin-top: 96px;
+    }
+
+    &__title {
+      display: inline-block;
+      padding-bottom: 4px;
+      font-size: 30px;
+      font-weight: 500;
+      color: $dark-grey;
+      border-bottom: 1px solid #898996;
+
+      @include media(tablet large x-large) {
+        padding-bottom: 6px;
+        font-size: 40px;
+        border-bottom: 2px solid #898996;
+      }
+    }
+
+    &__text {
+      margin-top: 24px;
+      font-size: 18px;
+      line-height: 1.65em;
+      color: $dark-grey;
+
+      @include media(tablet large x-large) {
+        margin-top: 36px;
+        font-size: 22px;
+      }
+    }
+
+    .images {
+      margin-top: 40px;
+
+      @include media(tablet large x-large) {
+        display: grid;
+        margin-top: 56px;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include media(tablet) {
+        column-gap: $side-gutter-tablet;
+      }
+
+      @include media(large x-large) {
+        column-gap: $side-gutter;
+      }
+
+      .image {
+        position: relative;
+        margin-top: 40px;
+
+        @include media(tablet large x-large) {
+          margin-top: 72px;
+
+          &:nth-child(-n + 2) {
+            margin-top: 0;
+          }
+        }
+
+        &--first {
+          margin-top: 0;
+        }
+
+        &__main {
+          display: block;
+          width: 100%;
+        }
+
+        &__button {
+          position: absolute;
+          height: 40px;
+          width: 40px;
+          right: 20px;
+          bottom: 20px;
+          background: url("/wp-content/themes/bonumic/assets/images/download-button.svg");
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .permanent-break {
+    display: block;
+  }
+
+  .break {
+    display: block;
+
+    @include media(tablet large x-large) {
+      display: inline;
+    }
+  }
+}
