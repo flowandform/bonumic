@@ -3,10 +3,16 @@ footer {
 }
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: $side-gutter;
   padding-top: 80px;
   padding-bottom: 92px;
   border-top: 2px solid #565661;
+
+  @include media(tablet) {
+    column-gap: $side-gutter-tablet;
+  }
 
   @include media(mobile) {
     display: block;
@@ -25,7 +31,6 @@ footer {
 
   .navbar {
     display: flex;
-    margin-left: auto;
     list-style-type: none;
 
     @include media(mobile) {
@@ -33,25 +38,20 @@ footer {
     }
 
     .column {
-      margin-left: 105px;
-
-      @include media(tablet) {
-        margin-left: 35px;
-      }
+      flex-shrink: 0;
 
       @include media(mobile) {
         margin-left: 0;
       }
 
       &--last {
-        margin-right: 146px;
+        margin-left: 105px;
 
         @include media(tablet) {
-          margin-right: 0px;
+          margin-left: 35px;
         }
 
         @include media(mobile) {
-          margin-right: 0px;
           margin-left: 34px;
         }
       }
