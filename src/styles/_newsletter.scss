@@ -88,6 +88,7 @@
       color: #e7e7ea;
       border: solid 3px $dark-grey;
       transition: background-color border-color 0.2s ease-in;
+      cursor: pointer;
 
       @include media(tablet large x-large) {
         font-size: 16px;

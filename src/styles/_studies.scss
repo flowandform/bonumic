@@ -1,5 +1,14 @@
 .studies {
   padding-top: 120px;
+  padding-bottom: 108px;
+
+  @include media(tablet) {
+    padding-bottom: 80px;
+  }
+
+  @include media(mobile) {
+    padding-bottom: 40px;
+  }
 
   .title {
     display: inline-block;
@@ -65,7 +74,6 @@
 @include media(mobile) {
   .studies {
     padding-top: 64px;
-    padding-bottom: 20px;
 
     .title {
       &__text {
@@ -102,7 +110,6 @@
 @include media(tablet) {
   .studies {
     padding-top: 64px;
-    padding-bottom: 20px;
 
     .title {
       &__text {

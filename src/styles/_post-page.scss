@@ -50,6 +50,15 @@
 
       &--bottom {
         margin-top: 0;
+        margin-bottom: 64px;
+
+        @include media(tablet) {
+          margin-bottom: 44px;
+        }
+
+        @include media(mobile) {
+          margin-bottom: 24px;
+        }
       }
 
       &--mobile {
@@ -306,10 +315,6 @@
       > p {
         font-size: 18px;
         line-height: 1.64em;
-
-        > a {
-          padding: 2px 4px;
-        }
       }
 
       > figure {

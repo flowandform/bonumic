@@ -1,5 +1,4 @@
 .blog {
-  margin-top: 64px;
   padding-top: 128px;
   padding-bottom: 144px;
   background: $dark-grey;
@@ -220,7 +219,6 @@
 
 @include media(tablet) {
   .blog {
-    margin-top: 20px;
     padding-top: 68px;
 
     &__title {
