@@ -7,7 +7,7 @@ Template Name: About Page
 get_header()
 ?>
 <main class="about-main">
-  <img src="/wp-content/themes/bonumic/assets/images/about-up.jpg" alt="people" class="image-left">
+  <img srcset="/wp-content/themes/bonumic/assets/images/about-up.jpg 1x, /wp-content/themes/bonumic/assets/images/about-up.jpg 2x" src="/wp-content/themes/bonumic/assets/images/about-up.jpg" alt="office" class="image-left">
   <section class="commercial container">
     <h2 class="commercial__description">
       Bonumic is an AI development and research project based in Europe, Croatia.
@@ -36,7 +36,7 @@ get_header()
     </article>
   </section>
   <section class="website">
-    <img src="/wp-content/themes/bonumic/assets/images/about-down.png" alt="sun over city" class="website__image">
+    <img srcset="/wp-content/themes/bonumic/assets/images/about-down.jpg 1x, /wp-content/themes/bonumic/assets/images/about-down.jpg 2x" src="/wp-content/themes/bonumic/assets/images/about-down.jpg" alt="flow n form people" class="website__image">
     <section class="website__content content">
       <h4 class="content__description">Bonumic is brought to you by <span>Flow and Form</span>,
         a team behind the leading property innovation studio.</h4>

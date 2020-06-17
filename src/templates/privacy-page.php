@@ -42,7 +42,7 @@ get_header()
     <h2 class="content__title">Your contact information</h2>
     <p class="content__text">
       <span>Flow and Form</span>
-      <span>Hondlova ulica 2/11</span>
+      <span>Hondlova ulica 2/9</span>
       <span>Croatia, Zagreb</span>
       <a href="mailto:hi@flownform.com">hi@flownform.com</a>
     </p>
