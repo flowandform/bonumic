@@ -27,6 +27,14 @@ module.exports = merge(require("./webpack.common.js"), {
             destination: "./dist/bonumic/screenshot.png",
           },
           { source: "./src/templates/*.php", destination: "./dist/bonumic" },
+          {
+            source: "./src/assets/archives",
+            destination: "./dist/bonumic/assets/archives",
+          },
+          {
+            source: "./src/template-parts",
+            destination: "./dist/bonumic/template-parts",
+          },
         ],
         delete: ["./dist/bonumic/main.js", "./dist/bonumic/main.js.map"],
         archive: [

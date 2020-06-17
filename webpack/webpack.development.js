@@ -32,6 +32,14 @@ module.exports = merge(require("./webpack.common.js"), {
             source: "./src/scripts/main.js",
             destination: "./html/wp-content/themes/bonumic/assets/js/main.js",
           },
+          {
+            source: "./src/assets/archives",
+            destination: "./html/wp-content/themes/bonumic/assets/archives",
+          },
+          {
+            source: "./src/template-parts",
+            destination: "./html/wp-content/themes/bonumic/template-parts",
+          },
         ],
       },
     }),
