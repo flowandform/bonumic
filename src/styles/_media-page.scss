@@ -108,6 +108,7 @@
 
     &__button {
       display: inline-block;
+      text-decoration: none;
       margin-top: 41px;
       padding: 19px 43px;
       font-weight: 700;
@@ -204,13 +205,23 @@
         }
 
         &__button {
+          opacity: 1;
           position: absolute;
           height: 40px;
           width: 40px;
           right: 20px;
           bottom: 20px;
           background: url("/wp-content/themes/bonumic/assets/images/download-button.svg");
+          transition: opacity 0.1s ease-in;
           cursor: pointer;
+
+          @include media(tablet large x-large) {
+            opacity: 0;
+          }
+        }
+
+        &:hover .image__button {
+          opacity: 1;
         }
       }
     }
