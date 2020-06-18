@@ -50,3 +50,13 @@ function fnf_add_favicon()
 }
 
 add_action('wp_head', 'fnf_add_favicon');
+
+if (class_exists('MultiPostThumbnails')) {
+  new MultiPostThumbnails(
+    array(
+      'label' => __('Actual Featured Image!', 'bonumic'),
+      'id' => 'secondary-image',
+      'post_type' => 'post'
+    )
+  );
+}

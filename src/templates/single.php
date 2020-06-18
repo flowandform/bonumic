@@ -13,7 +13,11 @@ if (have_posts()) {
           ?>
         </section>
       </section>
-      <div class="single-post__featured-image"><?php the_post_thumbnail(); ?></div>
+      <div class="single-post__featured-image">
+        <?php
+        MultiPostThumbnails::the_post_thumbnail(get_post_type(), 'secondary-image');
+        ?>
+      </div>
       <section class="info__right info__right--mobile right-list container">
         <?php
         get_template_part('template-parts/share-links');
@@ -30,10 +34,9 @@ if (have_posts()) {
     </main>
 <?php
     $activePostId = get_the_ID();
+    set_query_var('activePostId', $activePostId);
   }
 }
-?>
-<?php
 get_template_part('template-parts/newsletter');
 get_template_part('template-parts/blog');
 get_footer();
