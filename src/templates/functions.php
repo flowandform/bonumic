@@ -54,7 +54,7 @@ add_action('wp_head', 'fnf_add_favicon');
 if (class_exists('MultiPostThumbnails')) {
   new MultiPostThumbnails(
     array(
-      'label' => __('Actual Featured Image!', 'bonumic'),
+      'label' => __('First Article Image', 'bonumic'),
       'id' => 'secondary-image',
       'post_type' => 'post'
     )
