@@ -36,6 +36,7 @@ function copyTextToClipboard(text) {
 
     $(".burger-menu__icon").on("click", function () {
       $(".burger-menu").toggleClass("burger-menu--opened");
+      $(".icon__line--second").toggleClass("icon__line--opened");
       $(".content-overlay").toggleClass("content-overlay--on");
     });
 

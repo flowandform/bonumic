@@ -35,6 +35,11 @@
       font-size: 30px;
       font-weight: 500;
       border-bottom: 1px solid $blue-grey;
+
+      @include media(tablet large x-large) {
+        font-size: 40px;
+        border-bottom: 2px solid $blue-grey;
+      }
     }
 
     &__text {
@@ -42,6 +47,11 @@
       font-size: 18px;
       line-height: 1.65em;
       color: $dark-grey;
+
+      @include media(tablet large x-large) {
+        max-width: 460px;
+        font-size: 22px;
+      }
     }
   }
 
@@ -54,7 +64,8 @@
 
     &__input {
       width: calc(100% - 20px);
-      padding-bottom: 10px;
+      max-width: 480px;
+      padding: 10px 0;
       border: none;
       border-bottom: 2px solid $blue-grey;
       background-color: #e7e7ea;
@@ -95,7 +106,7 @@
         padding: 20px 59px;
       }
 
-      @include media(large x-large) {
+      @include media(tablet large x-large) {
         margin-top: 0;
       }
 
@@ -146,9 +157,9 @@
 .flex {
   display: block;
 
-  @include media(large x-large) {
+  @include media(tablet large x-large) {
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 52px;
   }
 }

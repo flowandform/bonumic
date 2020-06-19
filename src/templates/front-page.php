@@ -4,7 +4,7 @@ get_header()
 <main class="landing">
   <div class="landing__banner banner">
     <section class="banner__description description">
-      <h1 class="description__title">Building a <span class="break break--1">better world</h1>
+      <h1 class="description__title"><span class="description__title--light">Building a </span><span class="break break--1">better world</h1>
       <a href="/about" class="description__button">LEARN MORE</a>
     </section>
     <section class="banner__image image">
@@ -23,11 +23,11 @@ get_header()
 </main>
 <div class="container">
   <div class="landing__information information">
+    <div class="eu-badge"></div>
     <h2 class="information__text">
       Discovering the path to advanced artificial <span class="break"></span> intelligence
       in the real estate industry.
     </h2>
-    <div class="eu-badge"></div>
     <!-- <div class="information__links links">
       <a class="links__item" href="https://www.facebook.com/flownform/">Facebook</a>
       <a class="links__item" href="https://twitter.com/flownform?lang=en">Twitter</a>
@@ -103,6 +103,5 @@ get_header()
   </section>
 </section>
 <?php
-get_template_part('template-parts/newsletter');
 get_footer();
 ?>

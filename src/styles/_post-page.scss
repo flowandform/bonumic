@@ -81,13 +81,13 @@
           text-decoration: none;
           color: $dark-grey;
           font-weight: 400;
-          border-bottom: 2px solid $white;
+          border-bottom: 1px solid $white;
           transition: border-color 0.2s;
           padding: 4px 0;
           transition: border 0.2s;
 
           &:hover {
-            border-bottom: 2px solid $dark-grey;
+            border-bottom: 1px solid $blue-grey;
           }
         }
 

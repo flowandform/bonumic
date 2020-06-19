@@ -19,13 +19,19 @@
         <img class="header__logo" src="/wp-content/themes/bonumic/assets/images/logo-colour.svg" alt="logo" />
       </a>
       <nav class="navbar">
-        <a href="/" class="navbar__item <?php if (is_page('home')) echo 'is-active'; ?>">HOME</a>
-        <a href="/about" class="navbar__item <?php if (is_page('about')) echo 'is-active'; ?>">ABOUT</a>
+        <a href="/" class="navbar__item">
+          HOME
+          <span class="navbar__underline <?php if (is_page('home')) echo 'is-active'; ?>"></span>
+        </a>
+        <a href="/about" class="navbar__item">
+          ABOUT
+          <span class="navbar__underline <?php if (is_page('about')) echo 'is-active'; ?>"></span>
+        </a>
         <a href="mailto:hi@bonumic.com" class="navbar__item">CONTACT</a>
       </nav>
-      <div class="burger-menu__icon">
-        <div></div>
-        <div></div>
+      <div class="burger-menu__icon icon">
+        <div class="icon__line icon__line--first"></div>
+        <div class="icon__line icon__line--second"></div>
       </div>
     </div>
     <ul class="burger-menu">
