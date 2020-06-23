@@ -24,20 +24,8 @@
       }
     }
 
-    &__dots {
-      margin-left: auto;
-
-      .dot {
-        height: 14px;
-        width: 14px;
-        background: $bonumic;
-        border-radius: 50%;
-
-        &:last-child {
-          margin-top: 10px;
-          background: $blue-grey;
-        }
-      }
+    &__bold {
+      font-weight: 700;
     }
   }
 
@@ -77,6 +65,10 @@
 
     @include media(tablet) {
       padding-bottom: 100px;
+    }
+
+    @include media(mobile) {
+      padding-bottom: 64px;
     }
 
     &__image {
@@ -172,22 +164,6 @@
       &__description {
         width: 100%;
         font-size: 18px;
-      }
-
-      &__dots {
-        display: none;
-
-        .dot {
-          height: 14px;
-          width: 14px;
-          background: $bonumic;
-          border-radius: 50%;
-
-          &:last-child {
-            margin-top: 10px;
-            background: $blue-grey;
-          }
-        }
       }
     }
 

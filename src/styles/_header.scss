@@ -67,6 +67,10 @@ header {
       height: 235px;
       border-bottom: 1px solid $blue-grey;
     }
+
+    @include media(tablet large x-large) {
+      display: none;
+    }
   }
 }
 

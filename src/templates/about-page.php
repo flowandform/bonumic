@@ -10,13 +10,9 @@ get_header()
   <img srcset="/wp-content/themes/bonumic/assets/images/about-up.jpg 1x, /wp-content/themes/bonumic/assets/images/about-up.jpg 2x" src="/wp-content/themes/bonumic/assets/images/about-up.jpg" alt="office" class="image-left">
   <section class="commercial container">
     <h2 class="commercial__description">
-      Bonumic is an AI development and research project based in Europe, Croatia.
+      <span class="commerical__bold">Bonumic</span> is an AI development and research project based in Europe, Croatia.
       Our mission is to advance the real estate industry by leveraging aritficial intelligence.
     </h2>
-    <div class="commercial__dots">
-      <div class="dot"></div>
-      <div class="dot"></div>
-    </div>
   </section>
   <section class="info container">
     <article class="info__block block">
