@@ -73,9 +73,11 @@
 }
 
 #ct-ultimate-gdpr-cookie-popup.ct-ultimate-gdpr-cookie-popup-classic
-  #ct-ultimate-gdpr-cookie-content
-  * {
-  font-family: "DM Sans", sans-serif !important;
+  #ct-ultimate-gdpr-cookie-content {
+  & h1,
+  p {
+    font-family: "DM Sans", sans-serif !important;
+  }
 }
 
 #ct-ultimate-gdpr-cookie-popup {
@@ -160,4 +162,8 @@
 
 #ct-ultimate-gdpr-cookie-open {
   display: none !important;
+}
+
+.fa-long-arrow-right:before {
+  display: none;
 }

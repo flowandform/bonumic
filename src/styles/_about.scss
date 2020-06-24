@@ -30,16 +30,12 @@
   }
 
   .info {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: $side-gutter;
     margin-top: 114px;
 
     .block {
-      max-width: 460px;
-      &:last-child {
-        margin-left: 136px;
-        margin-right: 92px;
-      }
-
       &__title {
         display: inline-block;
         padding-bottom: 4px;
@@ -55,6 +51,10 @@
         font-weight: 400;
         color: $dark-grey;
       }
+    }
+
+    @include media(tablet) {
+      column-gap: $side-gutter-tablet;
     }
   }
 
@@ -241,11 +241,6 @@
 
       .block {
         margin-top: 28px;
-
-        &:last-child {
-          margin-left: 86px;
-          margin-right: 54px;
-        }
 
         &__title {
           font-size: 32px;

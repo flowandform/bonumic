@@ -48,6 +48,7 @@
         font-weight: 700;
         margin-bottom: -25px;
         color: $dark-grey;
+        letter-spacing: -0.03em;
 
         &--light {
           font-weight: 500;
@@ -97,7 +98,8 @@
     margin-left: auto;
     font-size: 18px;
     font-weight: 500;
-    line-height: 1.65em;
+    text-align: right;
+    line-height: 1.5em;
     color: $blue-grey;
 
     .break {
@@ -109,6 +111,7 @@
     }
 
     @include media(mobile) {
+      text-align: left;
       margin-top: 32px;
     }
   }
