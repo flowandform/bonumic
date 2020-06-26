@@ -46,6 +46,10 @@ module.exports = merge(require("./webpack.common.js"), {
     new CopyPlugin({
       patterns: [
         { from: "./src/templates", to: "./html/wp-content/themes/bonumic" },
+        {
+          from: "./src/scripts/main.js",
+          to: "./html/wp-content/themes/bonumic/assets/js/main.js",
+        },
       ],
     }),
   ],
