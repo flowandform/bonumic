@@ -147,7 +147,7 @@
     font-size: 14px;
     color: $dark-grey;
 
-    @include media(large x-large) {
+    @include media(tablet large x-large) {
       margin-top: 3px;
       margin-left: 24px;
       font-size: 18px;
@@ -162,5 +162,40 @@
     display: flex;
     align-items: center;
     margin-top: 52px;
+  }
+}
+
+// add this class to newsletter-section class in Ninja popup for Wordpress
+.newsletter-popup {
+  .container {
+    padding: 40px;
+  }
+  .newsletter {
+    display: block;
+  }
+
+  .form__button {
+    margin-top: 40px;
+  }
+
+  .column--second {
+    margin-top: 50px;
+  }
+
+  .flex {
+    display: block;
+  }
+
+  #mc_embed_signup {
+    #mce-success-response {
+      margin-top: 24px;
+      font-size: 14px;
+      color: $dark-grey;
+
+      @include media(tablet large x-large) {
+        margin-left: 0;
+        font-size: 18px;
+      }
+    }
   }
 }

@@ -8,6 +8,7 @@ function fnf_register_styles()
 {
   $version = wp_get_theme()->get('Version');
   wp_enqueue_style('bonumic-style', get_template_directory_uri() . '/style.css', array(), $version, 'all');
+  wp_enqueue_style('bonumic-mapbox', 'https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css', array(), '1.11.0', 'all');
 }
 
 add_action('wp_enqueue_scripts', 'fnf_register_styles');
@@ -18,7 +19,8 @@ function fnf_register_scripts()
   wp_enqueue_script('bonumic-jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1', true);
   wp_enqueue_script('bonumic-script', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true);
   wp_enqueue_script('bonumic-headroom', 'https://cdn.jsdelivr.net/npm/headroom.js@0.11.0/dist/headroom.min.js', array(), '0.11', true);
-  wp_enqueue_script('bonumic-jquery-headroom', 'https://cdn.jsdelivr.net/npm/headroom.js@0.9.4/dist/jQuery.headroom.min.js', array(), '0.11', true);
+  wp_enqueue_script('bonumic-jquery-headroom', 'https://cdn.jsdelivr.net/npm/headroom.js@0.9.4/dist/jQuery.headroom.min.js', array(), '0.9.4', true);
+  wp_enqueue_script('bonumic-mapbox', 'https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js', array(), '1.11.0', false);
 }
 
 add_action('wp_enqueue_scripts', 'fnf_register_scripts');
