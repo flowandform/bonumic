@@ -168,18 +168,47 @@
 // add this class to newsletter-section class in Ninja popup for Wordpress
 .newsletter-popup {
   .container {
-    padding: 40px;
+    padding: 54px 40px 80px 40px;
+
+    @include media(mobile) {
+      padding: 56px 20px 68px 20px;
+    }
   }
   .newsletter {
     display: block;
+
+    .column__text {
+      margin-top: 40px;
+
+      @include media(mobile) {
+        margin-top: 48px;
+      }
+    }
+
+    .column__title {
+      font-size: 32px;
+      border-bottom: 2px solid $blue-grey;
+
+      @include media(mobile) {
+        font-size: 30px;
+      }
+    }
   }
 
   .form__button {
     margin-top: 40px;
+
+    @include media(mobile) {
+      font-size: 14px;
+    }
   }
 
   .column--second {
-    margin-top: 50px;
+    margin-top: 40px;
+
+    @include media(mobile) {
+      margin-top: 48px;
+    }
   }
 
   .flex {
@@ -194,7 +223,7 @@
 
       @include media(tablet large x-large) {
         margin-left: 0;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
   }
