@@ -1,7 +1,7 @@
 /*!
 Theme Name: Bonumic
 Text Domain: Bonumic
-Version: 1.04
+Version: 1.05
 Decription: Real estate + machine learning
 Tags: real estate, ML, flownform, proptech
 Text Domain: bonumic
@@ -13,7 +13,6 @@ Author URI: https://flownform.com/
 @import "colors";
 @import "variables";
 @import "node_modules/media-blender/media";
-@import "mapbox";
 
 $media-breakpoints: (
   mobile: 0 767,
@@ -22,6 +21,7 @@ $media-breakpoints: (
   x-large: 1440,
 );
 
+@import "mapbox";
 @import "header";
 @import "blog";
 @import "landing";
