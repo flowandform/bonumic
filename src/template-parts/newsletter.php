@@ -4,7 +4,7 @@
     <section class="newsletter">
       <div class="column column--first">
         <h2 class="column__title">Newsletter</h2>
-        <div class="column__text">Get up to date on the newest information from the PropTech world.</div>
+        <div class="column__text">Stay up to date with the latest research and findings in the real estate data world.</div>
       </div>
       <div class="column column--second">
         <div id="mc_embed_signup">

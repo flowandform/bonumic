@@ -25,8 +25,9 @@ get_header()
   <div class="landing__information information">
     <div class="eu-badge"></div>
     <h2 class="information__text">
-      Discovering the path to advanced artificial <span class="break"></span> intelligence
-      in the real estate industry.
+      Exploring the possibilities in the Built World
+      <span class="break"></span>
+      by utilizing data and machine learning.
     </h2>
     <!-- <div class="information__links links">
       <a class="links__item" href="https://www.facebook.com/flownform/">Facebook</a>
@@ -38,7 +39,7 @@ get_header()
 </div>
 <section class="studies" id="featured">
   <div class="studies__title title">
-    <h2 class="title__text">Exploring possibilities</h2>
+    <h2 class="title__text">Our research</h2>
   </div>
   <?php
   $args = array(
