@@ -35,6 +35,7 @@ function copyTextToClipboard(text) {
         container: container,
         style: dataSource,
       });
+      map.scrollZoom.disable();
     }
 
     if ($(".bonumic-map").length) {

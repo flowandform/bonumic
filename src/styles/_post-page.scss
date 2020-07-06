@@ -110,10 +110,9 @@
   }
 
   #{&}__content {
-    max-width: 960px;
-    margin: 0 auto;
-
     .enlighter-default {
+      max-width: 720px;
+      margin: 0 auto;
       margin-top: 64px;
       margin-bottom: 0;
       padding: 50px 0;
@@ -143,6 +142,9 @@
     }
 
     > h2 {
+      max-width: 720px;
+      margin: 0 auto;
+
       margin-top: 80px;
       font-size: 40px;
       font-weight: 500;
@@ -150,8 +152,10 @@
     }
 
     > p {
+      max-width: 720px;
+      margin: 0 auto;
+
       margin-top: 40px;
-      margin-bottom: 0;
       line-height: 1.64em;
       font-size: 22px;
       color: $dark-grey;
@@ -173,7 +177,8 @@
     }
 
     > figure {
-      margin: 0;
+      max-width: 720px;
+      margin: 0 auto;
       margin-top: 64px;
 
       > img {
@@ -192,6 +197,9 @@
     }
 
     .wp-block-separator {
+      max-width: 720px;
+      margin: 0 auto;
+
       margin-top: 96px;
       margin-bottom: 32px;
       border: 1px solid #898996;
@@ -209,6 +217,7 @@
     }
 
     .footnotes {
+      max-width: 720px;
       font-size: 18px;
       margin-bottom: 112px;
 

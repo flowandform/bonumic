@@ -1,12 +1,8 @@
 .bonumic-map {
   height: 50vh;
-  width: 98vw;
-  margin-top: 40px;
+  width: 100vw;
   margin-left: -$side-gutter;
-
-  @include media(x-large) {
-    margin-left: $side-gutter-x-large-mapbox;
-  }
+  margin-top: 40px;
 
   @include media(mobile) {
     height: 80vh;
@@ -15,5 +11,9 @@
 
   @include media(tablet) {
     margin-left: -$side-gutter-tablet;
+  }
+
+  @include media(x-large) {
+    margin-left: $side-gutter-x-large-mapbox;
   }
 }
