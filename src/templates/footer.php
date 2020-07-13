@@ -32,7 +32,7 @@
             </a>
           </div>
           <div class="navbar__item">
-            <a class="link" href="/media-assets">
+            <a class="link" href="/media">
               MEDIA ASSETS
             </a>
           </div>
