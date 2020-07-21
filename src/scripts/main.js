@@ -34,6 +34,9 @@ function copyTextToClipboard(text) {
       var map = new mapboxgl.Map({
         container: container,
         style: dataSource,
+        zoom: 12,
+        center: [-122.44, 37.73],
+        pitch: 90,
       });
       if ($(window).width() < 767) {
         map.scrollZoom.disable();
