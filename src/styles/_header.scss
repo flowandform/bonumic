@@ -19,6 +19,7 @@
 
 header {
   position: fixed;
+  padding: 63px 0;
   z-index: 3;
   top: 0;
   right: 0;
@@ -77,7 +78,6 @@ header {
 
 .header {
   display: flex;
-  padding: 62px 0;
   justify-content: space-between;
   align-items: center;
   background: $white;
@@ -143,12 +143,11 @@ header {
   }
 
   header {
+    padding: 20px 0;
     background: $white;
   }
 
   .header {
-    padding: 20px 0;
-
     .burger-menu__icon {
       display: block;
     }
@@ -166,18 +165,26 @@ header {
 }
 
 .headroom {
-  transition: 0.2s padding ease-in;
+  transition: transform 200ms linear;
 }
 
-.headroom--pinned,
-.headroom--unpinned {
+.headroom--pinned {
   padding: 20px 0;
+  transform: translateY(0%);
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%);
 }
 
 .headroom--top {
-  padding: 62px 0;
+  padding: 63px 0;
 
   @include media(mobile) {
     padding: 20px 0;
   }
+}
+
+.header--opened {
+  padding-bottom: 0;
 }
