@@ -72,8 +72,19 @@ function copyTextToClipboard(text) {
 
     $(".content-overlay").on("click", function () {
       $(".content-overlay").removeClass("content-overlay--on");
+      $(".icon__line--second").removeClass("icon__line--opened");
       $(".burger-menu").removeClass("burger-menu--opened");
       $("header").removeClass("header--opened");
+    });
+
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll > 5 && scroll < 100) {
+        $("header").addClass("header-start-scroll");
+      } else {
+        $("header").removeClass("header-start-scroll");
+      }
     });
   });
 

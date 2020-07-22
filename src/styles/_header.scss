@@ -25,6 +25,11 @@ header {
   right: 0;
   left: 0;
   background: $white;
+  transition: padding 200ms ease-in;
+
+  @include media(mobile) {
+    padding: 20px 0;
+  }
 
   .burger-menu {
     overflow: hidden;
@@ -66,8 +71,7 @@ header {
     }
 
     &--opened {
-      height: 235px;
-      border-bottom: 1px solid $blue-grey;
+      height: 215px;
     }
 
     @include media(tablet large x-large) {
@@ -143,7 +147,6 @@ header {
   }
 
   header {
-    padding: 20px 0;
     background: $white;
   }
 
@@ -166,6 +169,7 @@ header {
 
 .headroom {
   transition: transform 200ms linear;
+  transition: padding 200ms linear;
 }
 
 .headroom--pinned {
@@ -174,7 +178,13 @@ header {
 }
 
 .headroom--unpinned {
+  padding: 20px 0;
   transform: translateY(-100%);
+}
+
+.header--opened {
+  padding-bottom: 0;
+  border-bottom: 1px solid $blue-grey;
 }
 
 .headroom--top {
@@ -185,6 +195,6 @@ header {
   }
 }
 
-.header--opened {
-  padding-bottom: 0;
+.header-start-scroll {
+  padding: 20px 0;
 }
