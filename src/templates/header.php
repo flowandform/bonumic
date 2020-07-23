@@ -13,8 +13,8 @@
 
 <body>
   <div class="content-overlay"></div>
-  <header>
-    <div class="header js-headroom container">
+  <header class="js-headroom">
+    <div class="header container">
       <a href="/">
         <img class="header__logo" src="/wp-content/themes/bonumic/assets/images/logo-colour.svg" alt="logo" />
       </a>

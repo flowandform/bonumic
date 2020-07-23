@@ -25,7 +25,12 @@ function copyTextToClipboard(text) {
 
 (function ($) {
   $(document).ready(function () {
-    $(".js-headroom").headroom();
+    var options = {
+      // vertical offset in px before element is first unpinned
+      offset: 200,
+    };
+
+    $(".js-headroom").headroom(options);
 
     mapboxgl.accessToken =
       "pk.eyJ1IjoiaGFzZWxudXNzIiwiYSI6ImNrOXZyc2Y4ZzAxeWMzZXFzNHkyMmp0cjQifQ.QRQfmIBMs8CWBz3wuyaEZA";
@@ -34,6 +39,9 @@ function copyTextToClipboard(text) {
       var map = new mapboxgl.Map({
         container: container,
         style: dataSource,
+        zoom: 12,
+        center: [-122.44, 37.73],
+        pitch: 90,
       });
       if ($(window).width() < 767) {
         map.scrollZoom.disable();
@@ -59,11 +67,24 @@ function copyTextToClipboard(text) {
       $(".burger-menu").toggleClass("burger-menu--opened");
       $(".icon__line--second").toggleClass("icon__line--opened");
       $(".content-overlay").toggleClass("content-overlay--on");
+      $("header").toggleClass("header--opened");
     });
 
     $(".content-overlay").on("click", function () {
       $(".content-overlay").removeClass("content-overlay--on");
+      $(".icon__line--second").removeClass("icon__line--opened");
       $(".burger-menu").removeClass("burger-menu--opened");
+      $("header").removeClass("header--opened");
+    });
+
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+
+      if (scroll > 5 && scroll < 200) {
+        $("header").addClass("header-start-scroll");
+      } else {
+        $("header").removeClass("header-start-scroll");
+      }
     });
   });
 
