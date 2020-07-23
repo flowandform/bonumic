@@ -27,7 +27,7 @@ function copyTextToClipboard(text) {
   $(document).ready(function () {
     var options = {
       // vertical offset in px before element is first unpinned
-      offset: 100,
+      offset: 200,
     };
 
     $(".js-headroom").headroom(options);
@@ -80,7 +80,7 @@ function copyTextToClipboard(text) {
     $(window).scroll(function () {
       var scroll = $(window).scrollTop();
 
-      if (scroll > 5 && scroll < 100) {
+      if (scroll > 5 && scroll < 200) {
         $("header").addClass("header-start-scroll");
       } else {
         $("header").removeClass("header-start-scroll");

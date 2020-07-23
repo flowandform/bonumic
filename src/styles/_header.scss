@@ -168,8 +168,7 @@ header {
 }
 
 .headroom {
-  transition: transform 200ms linear;
-  transition: padding 200ms linear;
+  transition: transform 200ms linear, padding 250ms linear;
 }
 
 .headroom--pinned {
