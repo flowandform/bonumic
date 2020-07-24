@@ -46,16 +46,29 @@
       &__title {
         font-size: 112px;
         font-weight: 700;
-        margin-bottom: -25px;
         color: $dark-grey;
         letter-spacing: -0.03em;
+      }
 
-        &--light {
-          font-weight: 500;
+      &__description {
+        margin-top: 35px;
+        font-size: 22px;
+        line-height: 1.5em;
+        color: #27272b;
+
+        @include media(mobile) {
+          max-width: 304px;
+          margin-top: 10px;
+          font-size: 18px;
+          line-height: 1.61em;
         }
 
         .break {
           display: block;
+
+          @include media(mobile) {
+            display: inline;
+          }
         }
       }
 
@@ -168,6 +181,7 @@
 
     .banner {
       .image {
+        margin-top: 36px;
         padding-right: $side-gutter-mobile;
 
         &__original {
@@ -216,7 +230,7 @@
         z-index: 1;
 
         &__title {
-          font-size: 56px;
+          font-size: 64px;
         }
 
         &__button {
@@ -246,7 +260,7 @@
     padding-bottom: 20px;
 
     &__text {
-      font-size: 13px;
+      font-size: 14px;
     }
 
     &__links {
@@ -278,7 +292,7 @@
       }
 
       .description {
-        margin-bottom: 10px;
+        margin-bottom: -10px;
         padding-left: $side-gutter-tablet;
 
         &__title {
@@ -286,7 +300,7 @@
         }
 
         &__button {
-          bottom: 50px;
+          bottom: 100px;
           padding: 33px $side-gutter-tablet 33px 62px;
           font-size: 15px;
         }

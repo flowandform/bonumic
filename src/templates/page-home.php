@@ -9,7 +9,12 @@ get_header()
 <main class="landing">
   <div class="landing__banner banner">
     <section class="banner__description description">
-      <h1 class="description__title">Building a <span class="break break--1">better world</h1>
+      <h1 class="description__title">
+        Bonumic
+      </h1>
+      <div class="description__description">
+        Discovering the path to advanced artificial <span class="break"></span> intelligence in the real estate industry.
+      </div>
       <a href="/about" class="description__button">LEARN MORE</a>
     </section>
     <section class="banner__image image">
