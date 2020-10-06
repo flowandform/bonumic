@@ -33,7 +33,7 @@ function copyTextToClipboard(text) {
     $(".js-headroom").headroom(options);
 
     mapboxgl.accessToken =
-      "pk.eyJ1IjoiaGFzZWxudXNzIiwiYSI6ImNrOXZyc2Y4ZzAxeWMzZXFzNHkyMmp0cjQifQ.QRQfmIBMs8CWBz3wuyaEZA";
+      "sk.eyJ1IjoiZmxvd25hZGZvcm0iLCJhIjoiY2tmbWl0azNhMDNwdjJ5bXFkODRuYWVwOCJ9.JsUBIY6gY9lXGRYlX3jptQ";
 
     function drawMapbox(container, dataSource) {
       var map = new mapboxgl.Map({
