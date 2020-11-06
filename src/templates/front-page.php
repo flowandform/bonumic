@@ -104,5 +104,6 @@ get_header()
   </section>
 </section>
 <?php
+get_template_part('template-parts/newsletter');
 get_footer();
 ?>
