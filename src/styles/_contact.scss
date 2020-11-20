@@ -1,0 +1,53 @@
+.black {
+  background-color: $dark-grey;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  padding-left: 80px;
+
+  .block__title.header-text {
+    border: none;
+  }
+
+  p,
+  .block__description {
+    color: $white !important;
+  }
+
+  .header-text {
+    font-family: DM Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: -0.800000011920929px;
+    text-align: left;
+
+  }
+
+  .description-text {
+    font-family: DM Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #898996 !important;
+
+  }
+}
+
+.block-flexi {}
+
+.title {
+  font-family: DM Sans;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 96px;
+  letter-spacing: -2.4000000953674316px;
+  text-align: left;
+}
