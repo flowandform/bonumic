@@ -59,6 +59,10 @@ h5 {
   margin-left: auto;
   padding-right: $side-gutter;
   padding-left: $side-gutter;
+
+  &--bottom-space {
+    padding-bottom: 100px;
+  }
 }
 
 @include media(mobile) {

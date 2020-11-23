@@ -21,7 +21,7 @@ get_header()
     </section>
   </div>
 </main>
-<div class="container">
+<div class="container container--bottom-space">
   <div class="landing__information information">
     <div class="eu-badge"></div>
     <h2 class="information__text">
