@@ -11,14 +11,15 @@ get_header()
   <div class="header container">
     <div class="title-wrapper">
       <div class="title"> <span style='color:#2d13e3'>Thank you</span> for</br>getting in touch.</div>
-      <p class="block__description home-wrapper">
+      <p class="block__description wrapper">
         We will get back to you soon.
       </p>
+
+    </div>
+</div>
       <div class= "home-wrapper">
         <button>HOMEPAGE</button>
       </div>
-    </div>
-</div>
 </main>
 <section class="blog" id="blog">
   <section class="container">
