@@ -15,7 +15,7 @@
             </a>
           </div>
           <div class="navbar__item">
-            <a class="link" href="mailto:hi@bonumic.com" class="navbar__item">
+            <a class="link" href="/contact" class="navbar__item">
               CONTACT
             </a>
           </div>

@@ -27,7 +27,7 @@
           ABOUT
           <span class="navbar__underline <?php if (is_page('about')) echo 'is-active'; ?>"></span>
         </a>
-        <a href="mailto:hi@bonumic.com" class="navbar__item">CONTACT</a>
+        <a href="/contact" class="navbar__item">CONTACT</a>
       </nav>
       <div class="burger-menu__icon icon">
         <div class="icon__line icon__line--first"></div>
@@ -46,7 +46,7 @@
         </a>
       </li>
       <li class="burger-menu__item">
-        <a href="mailto:hi@bonumic.com" class="link">
+        <a href="/contact" class="link">
           <div class="link__name">CONTACT</div>
         </a>
       </li>
