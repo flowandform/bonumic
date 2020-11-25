@@ -1,3 +1,13 @@
+.contact-main {
+  margin-top: $navbar-height-large;
+  padding-bottom: 200px;
+
+  @include media(mobile) {
+    margin-top: 128px;
+    padding-bottom: 120px;
+  }
+}
+
 .black {
   background-color: $dark-grey;
   color: $white;
@@ -6,6 +16,14 @@
   justify-content: center;
   align-items: baseline;
   padding-left: 80px;
+
+  @include media(mobile) {
+    justify-content: center;
+    align-items: center;
+    padding: 63px 0;
+    margin-left: -$side-gutter-mobile !important;
+    margin-right: -$side-gutter-mobile !important;
+  }
 
   .block__title.header-text {
     border: none;
@@ -24,7 +42,6 @@
     line-height: 46px;
     letter-spacing: -0.800000011920929px;
     text-align: left;
-
   }
 
   .description-text {
@@ -36,11 +53,8 @@
     letter-spacing: 0px;
     text-align: left;
     color: #898996 !important;
-
   }
 }
-
-.block-flexi {}
 
 .title {
   font-family: DM Sans;
@@ -50,4 +64,9 @@
   line-height: 96px;
   letter-spacing: -2.4000000953674316px;
   text-align: left;
+
+  @include media(mobile) {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }

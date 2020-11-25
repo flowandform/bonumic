@@ -7,30 +7,32 @@ Template Name: Contact Page
 get_header()
 ?>
 
-<main class="about-main">
-  <section class="info container">
-    <div class="title">Contact</div>
-  </section>
+<main class="about-main contact-main">
+  <div class="container title">Contact</div>
   <section class="info container">
     <article class="info__block block">
       <h3 class="block__title">Get in touch</h3>
       <p class="block__description">
         Have a question? Wondering about how Bonumic can help your project?
-        <br/>
+        <br />
         Our team will get back to you as soon as possible.
       </p>
     </article>
     <article class="info__block block black">
-    <div class="header-text">
-      For any inquiry:
-    </div>
-    <div class="description-text">
-      hi@flownform.com
-    </div>
+      <div>
+        <div class="header-text">
+          For any inquiry:
+        </div>
+        <div class="description-text">
+          hi@flownform.com
+        </div>
+      </div>
     </article>
   </section>
-  <section class="info container">
-  <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/2Xg3Uco2CVjGyb2xmyMWkRB7uXSiwU5VXId1Vs4CVVTdAQm7UlkCxNtVXhtMiHjLZ"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+  <section class="container container--contact">
+    <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/2Xg3Uco2CVjGyb2xmyMWkRB7uXSiwU5VXId1Vs4CVVTdAQm7UlkCxNtVXhtMiHjLZ">
+      <script src="https://webforms.pipedrive.com/f/loader"></script>
+    </div>
   </section>
 </main>
 <?php
