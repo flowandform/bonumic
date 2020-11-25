@@ -18,7 +18,7 @@ get_header()
     </div>
   </div>
   <div class="home-wrapper">
-    <div class="home-wrapper__button">HOMEPAGE</div>
+    <a href="/" class="home-wrapper__button">HOMEPAGE</a>
   </div>
 </main>
 <section class="blog" id="blog">
