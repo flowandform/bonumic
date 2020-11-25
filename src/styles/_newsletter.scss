@@ -1,5 +1,10 @@
 .newsletter-section {
   background-color: #e7e7ea;
+  margin-top: 100px;
+}
+
+.blog + .newsletter-section {
+  margin-top: 0;
 }
 
 .newsletter {
