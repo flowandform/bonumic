@@ -7,7 +7,7 @@ Template Name: ThankYou Page
 get_header()
 ?>
 
-<main class="about-main">
+<main class="about-main thankyou-main">
   <div class="header container">
     <div class="title-wrapper">
       <div class="title"> <span style='color:#2d13e3'>Thank you</span> for</br>getting in touch.</div>
@@ -16,10 +16,10 @@ get_header()
       </p>
 
     </div>
-</div>
-      <div class= "home-wrapper">
-        <button>HOMEPAGE</button>
-      </div>
+  </div>
+  <div class="home-wrapper">
+    <div class="home-wrapper__button">HOMEPAGE</div>
+  </div>
 </main>
 <section class="blog" id="blog">
   <section class="container">

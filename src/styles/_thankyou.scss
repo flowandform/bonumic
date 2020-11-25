@@ -1,9 +1,6 @@
 section.info.container.wide {
   grid-template-columns: none !important;
-
 }
-
-.title-wrapper {}
 
 .wide {
   width: 80%;
@@ -24,18 +21,47 @@ p.wrapper {
   right: 0;
   height: 88px;
 
-
-  button {
-    width: 312px;
-    font-size: 16px;
-    padding: 10px 59px;
-    padding-left: 0px;
-    text-transform: uppercase;
-    font-size: 13px;
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 370px;
+    padding: 33px 59px;
+    padding-right: $side-gutter;
+    background-color: $dark-grey;
+    font-size: 18px;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    background-color: #1e1e21;
-    color: #e7e7ea;
-    border: none;
+    letter-spacing: 2px;
+    color: $white;
+    text-decoration: none;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #363639;
+    }
+
+    &:focus {
+      background-color: $dark-grey;
+      outline: solid 3px $blue-grey;
+      outline-offset: -3px;
+    }
+
+    @include media(mobile) {
+      bottom: 350px;
+      padding: 22px 48px;
+    }
   }
+}
+
+.title-wrapper {
+  .title {
+    @include media(mobile) {
+      margin-top: 63px;
+      font-size: 56px;
+      line-height: 60px;
+    }
+  }
+}
+
+.thankyou-main {
+  padding-bottom: 100px;
 }
