@@ -15,15 +15,26 @@ get_header()
   </section>
   <section class="info container">
     <article class="info__block block">
-      <h3 class="block__title">Why Bonumic</h3>
+      <h3 class="block__title">The Challenge</h3>
       <p class="block__description">
-        Real estate is one of the slowest industries in technology adoption. We lack structured data, research and basic knowledge funding to make the next leap - we are here to begin that journey.
+        Real estate is one of the slowest industries in adopting modern technology. It's weakest point is lack of structured data, research and basic knowledge funding to make the next leap. Large companies build advance technologies, create data and knowledge silos within their organizations to which we can't contribute and don't have the access. </p>
+    </article>
+    <article class="info__block block">
+      <h3 class="block__title">Real Estate Today</h3>
+      <p class="block__description">
+        With over $219 trillion in market size, real estate is the world's largest asset class. Over many decades we built repetitive and redundant processes across all verticals in the property business. With the right vision and talent in place, we can move the needle.
       </p>
     </article>
     <article class="info__block block">
-      <h3 class="block__title">Potential</h3>
+      <h3 class="block__title">The Mission</h3>
       <p class="block__description">
-        With over $219 trillion in market size, real estate is the world largest asset class. Over many decades we built repetitive and redundant processes across all verticals in the property business. With the right vision and talent in place, we can move the needle.
+        We are creating a research and case studies where we share the knowledge, data and resources on solving burning challenges in various real estate verticals using machine learning and AI.
+      </p>
+    </article>
+    <article class="info__block block">
+      <h3 class="block__title">Our Goals</h3>
+      <p class="block__description">
+        Our goal is to increase the basic research funding of knowledge in real estate AI and share our findings with the wider audience. This project is co-funded by the European Union and both real estate professionals and scientists in the field of AI are welcome to contribute to the project with their ideas and knowledge.
       </p>
     </article>
   </section>
@@ -31,7 +42,8 @@ get_header()
     <img srcset="/wp-content/themes/bonumic/assets/images/about-down.jpg 1x, /wp-content/themes/bonumic/assets/images/about-down.jpg 2x" src="/wp-content/themes/bonumic/assets/images/about-down.jpg" alt="flow n form people" class="website__image">
     <section class="website__content content">
       <h4 class="content__description">Bonumic is brought to you by <span>Flow and Form</span>,
-        a team behind the leading property innovation studio.</h4>
+        a company fully focused to real estate, currently leading the market in proptech services. Flow and Form acts as a bridge between real estate professionals and technologists in an effort to help accelerate the value creation of bringing advanced technology to the real estate industry.
+      </h4>
       <a href="https://flownform.com/" class="content__button">
         OUR WEBSITE
       </a>
