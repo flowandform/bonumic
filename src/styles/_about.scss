@@ -51,6 +51,12 @@
         font-weight: 400;
         color: $dark-grey;
       }
+
+      padding-bottom: 48px;
+
+      @include media(mobile) {
+        padding-bottom: 0;
+      }
     }
 
     @include media(tablet) {
