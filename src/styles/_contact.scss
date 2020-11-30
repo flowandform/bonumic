@@ -6,6 +6,28 @@
     margin-top: 128px;
     padding-bottom: 120px;
   }
+
+  .info {
+    margin-top: 80px;
+
+    @include media(mobile) {
+      margin-top: 48px;
+    }
+
+    .block {
+      padding-bottom: 0;
+    }
+
+    .black {
+      @include media(mobile) {
+        padding: 63px 0;
+      }
+    }
+  }
+}
+
+.contact-main + .newsletter-section {
+  margin-top: 0;
 }
 
 .black {
@@ -27,11 +49,6 @@
 
   .block__title.header-text {
     border: none;
-  }
-
-  p,
-  .block__description {
-    color: $white !important;
   }
 
   .header-text {

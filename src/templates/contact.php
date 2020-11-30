@@ -12,10 +12,11 @@ get_header()
   <section class="info container">
     <article class="info__block block">
       <h3 class="block__title">Get in touch</h3>
-      <p class="block__description">
+      <p class="block__description block__description--narrow">
         Have a question? Wondering about how Bonumic can help your project?
-        <br />
-        Our team will get back to you as soon as possible.
+        <span>
+          Our team will get back to you </br> as soon as possible.
+        </span>
       </p>
     </article>
     <article class="info__block block black">

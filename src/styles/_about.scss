@@ -55,6 +55,17 @@
         font-weight: 400;
         color: $dark-grey;
 
+        &--narrow {
+          max-width: 390px;
+          font-weight: 500;
+
+          > span {
+            margin-top: 16px;
+            display: block;
+            font-weight: 400;
+          }
+        }
+
         &--down {
           color: $white;
 
