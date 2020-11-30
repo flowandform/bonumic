@@ -41,6 +41,11 @@
 
 .action {
   position: relative;
+  padding-bottom: 104px;
+
+  @include media(mobile) {
+    padding-bottom: 0;
+  }
 
   &__description {
     font-size: 22px;
@@ -79,6 +84,10 @@
       outline: solid 3px $blue-grey;
       outline-offset: -3px;
     }
+
+    @include media(large) {
+      padding-right: $side-gutter;
+    }
   }
 }
 
@@ -90,7 +99,7 @@
 
     &__button {
       padding-right: 59px;
-      margin-right: $side-gutter-x-large;
+      right: $side-gutter-x-large;
     }
   }
 }
@@ -107,6 +116,10 @@
         &--left {
           position: static;
           font-size: 56px;
+
+          .break {
+            display: none;
+          }
         }
 
         &--right {
