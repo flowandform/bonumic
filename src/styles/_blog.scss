@@ -68,71 +68,69 @@
       }
     }
   }
+}
 
-  .bonumic-info {
-    display: flex;
-    align-items: flex-start;
-    margin-top: 128px;
-    margin-left: $side-gutter;
+.bonumic-info {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 128px;
+  margin-left: $side-gutter;
 
-    &__button {
-      display: block;
-      flex-shrink: 0;
-      margin-left: auto;
-      padding: 33px 62px;
-      padding-right: $side-gutter;
-      background: $blue-grey;
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: 2px;
-      color: $white;
-      text-decoration: none;
-      opacity: 1;
-      transition: background-color 0.2s;
+  &__button {
+    display: block;
+    flex-shrink: 0;
+    margin-left: auto;
+    padding: 33px 62px;
+    padding-right: $side-gutter;
+    background: $blue-grey;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: $white;
+    text-decoration: none;
+    opacity: 1;
+    transition: background-color 0.2s;
 
-      &:hover {
-        background-color: #a1a1b1;
-      }
-
-      &:focus {
-        background-color: $blue-grey;
-        outline: solid 3px $white;
-        outline-offset: -3px;
-      }
+    &:hover {
+      background-color: #a1a1b1;
     }
 
-    &__description {
-      max-width: 600px;
-      margin: 0;
-      margin-right: 100px;
-      font-size: 22px;
-      line-height: 1.62em;
-      color: $white;
-
-      @include media(mobile) {
-        margin-right: 0;
-      }
+    &:focus {
+      background-color: $blue-grey;
+      outline: solid 3px $white;
+      outline-offset: -3px;
     }
+  }
 
-    &__provider {
-      margin: 0;
-      margin-top: 16px;
-      font-size: 18px;
-      font-weight: 500;
-      color: $blue-grey;
+  &__description {
+    max-width: 600px;
+    margin: 0;
+    margin-right: 100px;
+    font-size: 22px;
+    line-height: 1.62em;
+    color: $white;
+
+    @include media(mobile) {
+      margin-right: 0;
     }
+  }
+
+  &__provider {
+    margin: 0;
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    color: $blue-grey;
   }
 }
 
 @include media(x-large) {
-  .blog {
-    .bonumic-info {
-      margin-left: $side-gutter-x-large;
+  .bonumic-info {
+    margin-left: $side-gutter-x-large;
 
-      &__button {
-        padding-right: 62px;
-        margin-right: $side-gutter-x-large;
-      }
+    &__button {
+      padding-right: 62px;
+      margin-right: $side-gutter-x-large;
     }
   }
 }
@@ -186,34 +184,34 @@
         }
       }
     }
+  }
 
-    .bonumic-info {
-      display: block;
-      position: relative;
-      margin-top: 80px;
-      margin-left: $side-gutter-mobile;
+  .bonumic-info {
+    display: block;
+    position: relative;
+    margin-top: 80px;
+    margin-left: $side-gutter-mobile;
 
-      &__button {
-        position: absolute;
-        right: 0;
-        bottom: -160px;
-        padding: 22px 42px;
-        font-size: 13px;
+    &__button {
+      position: absolute;
+      right: 0;
+      bottom: -160px;
+      padding: 22px 42px;
+      font-size: 13px;
+    }
+
+    &__description {
+      font-size: 18px;
+
+      > br {
+        display: none;
       }
+    }
 
-      &__description {
-        font-size: 18px;
-
-        > br {
-          display: none;
-        }
-      }
-
-      &__provider {
-        padding-bottom: 12px;
-        font-size: 14px;
-        line-height: 1.3em;
-      }
+    &__provider {
+      padding-bottom: 12px;
+      font-size: 14px;
+      line-height: 1.3em;
     }
   }
 }
@@ -251,29 +249,28 @@
         }
       }
     }
+  }
+  .bonumic-info {
+    margin-top: 100px;
+    margin-left: $side-gutter-tablet;
 
-    .bonumic-info {
-      margin-top: 100px;
-      margin-left: $side-gutter-tablet;
+    &__button {
+      font-size: 15px;
+      padding: 33px 62px;
+      padding-right: $side-gutter-tablet;
+      margin-left: auto;
+    }
 
-      &__button {
-        font-size: 15px;
-        padding: 33px 62px;
-        padding-right: $side-gutter-tablet;
-        margin-left: auto;
+    &__description {
+      font-size: 20px;
+
+      > br {
+        display: none;
       }
+    }
 
-      &__description {
-        font-size: 20px;
-
-        > br {
-          display: none;
-        }
-      }
-
-      &__provider {
-        font-size: 18px;
-      }
+    &__provider {
+      font-size: 18px;
     }
   }
 }

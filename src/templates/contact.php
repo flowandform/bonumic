@@ -39,21 +39,21 @@ get_header()
 <?php
 get_template_part('template-parts/newsletter');
 ?>
-<section class="blog" id="blog">
-  <section class="container">
-    <section class="blog__posts posts posts--front-page">
-      <?php
-      $args = array(
-        'post_type' => 'post',
-        'post__not_in' => array($activePostId),
-        'orderby'    => 'date&order=DESC',
-        'post__not_in' => get_option('sticky_posts'),
-        'post_status' => 'publish',
-        'order'    => 'DESC',
-        'posts_per_page' => -1
-      );
-      $result = new WP_Query($args);
-      if ($result->have_posts()) : ?>
+<?php
+$args = array(
+  'post_type' => 'post',
+  'post__not_in' => array($activePostId),
+  'orderby'    => 'date&order=DESC',
+  'post__not_in' => get_option('sticky_posts'),
+  'post_status' => 'publish',
+  'order'    => 'DESC',
+  'posts_per_page' => -1
+);
+$result = new WP_Query($args);
+if ($result->have_posts()) : ?>
+  <section class="blog" id="blog">
+    <section class="container">
+      <section class="blog__posts posts posts--front-page">
         <?php while ($result->have_posts()) : $result->the_post(); ?>
           <section class="posts__post post">
             <a href=<?php echo get_permalink(); ?>>
@@ -70,10 +70,10 @@ get_template_part('template-parts/newsletter');
           </section>
         <?php endwhile; ?>
       <?php endif;
-      wp_reset_postdata(); ?>
+    wp_reset_postdata(); ?>
+      </section>
     </section>
   </section>
-</section>
-<?php
-get_footer();
-?>
+  <?php
+  get_footer();
+  ?>
