@@ -13,7 +13,7 @@
     margin-top: 96px;
 
     &__description {
-      width: 70%;
+      width: 73%;
       font-size: 26px;
       font-weight: 400;
       color: $dark-grey;
@@ -35,6 +35,10 @@
     column-gap: $side-gutter;
     margin-top: 114px;
 
+    &--down {
+      margin-top: 84px;
+    }
+
     .block {
       &__title {
         display: inline-block;
@@ -50,9 +54,17 @@
         font-size: 22px;
         font-weight: 400;
         color: $dark-grey;
+
+        &--down {
+          color: $white;
+
+          > span {
+            font-weight: 700;
+          }
+        }
       }
 
-      padding-bottom: 48px;
+      padding-bottom: 64px;
 
       @include media(mobile) {
         padding-bottom: 0;
@@ -80,52 +92,79 @@
     &__image {
       display: block;
       background: linear-gradient($white 50%, $dark-grey 50%) no-repeat;
-      margin-top: 104px;
+      margin-top: 56px;
       width: 100%;
       padding-left: $side-gutter;
     }
 
     .content {
       display: flex;
-      margin-top: 80px;
+      margin-top: 56px;
       margin-left: $side-gutter;
       align-items: center;
 
-      &__description {
-        width: 50%;
+      &__title {
+        margin: 0;
         font-size: 26px;
         color: $white;
-        font-weight: 400;
+        font-weight: 500;
         line-height: 1.7em;
 
-        > span {
-          font-weight: 700;
+        @include media(mobile) {
+          font-size: 18px;
+        }
+
+        &--light {
+          font-weight: 400;
+        }
+      }
+
+      &__copyright {
+        margin: 0;
+        margin-top: 16px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18px;
+        color: $grey;
+
+        @include media(mobile) {
+          font-size: 14px;
         }
       }
 
       &__button {
         display: block;
         margin-left: auto;
-        background: $blue-grey;
-        padding: 33px 59px;
+        background: $yellow;
+        padding: 25px 40px;
         padding-right: $side-gutter;
-        color: $dark-grey;
-        font-size: 18px;
+        color: $black;
+        font-size: 14px;
         font-weight: 700;
         letter-spacing: 2px;
-        color: $white;
         text-decoration: none;
         opacity: 1;
         transition: background-color 0.2s;
 
         &:hover {
-          background-color: #a1a1b1;
+          background-color: $yellow-hover;
         }
 
         &:focus {
-          background-color: $blue-grey;
-          outline: solid 3px $white;
+          background-color: $yellow;
+          outline: solid 3px $blue-grey;
           outline-offset: -3px;
+        }
+
+        .logo {
+          width: 180px;
+          height: 40px;
+          display: block;
+
+          @include media(mobile) {
+            width: 140px;
+            height: 30px;
+          }
         }
       }
     }
@@ -180,6 +219,10 @@
       .block {
         margin-top: 48px;
 
+        @include media(mobile) {
+          margin-top: 28px;
+        }
+
         &:last-child {
           margin-left: 0;
           margin-right: 0;
@@ -218,8 +261,8 @@
         &__button {
           position: absolute;
           right: 0;
-          bottom: -97px;
-          padding: 22px 36px;
+          bottom: -98px;
+          padding: 18px 30px;
           font-size: 13px;
         }
       }
