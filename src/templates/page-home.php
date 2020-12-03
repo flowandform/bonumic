@@ -9,7 +9,7 @@ get_header()
 <main class="landing">
   <div class="landing__banner banner">
     <section class="banner__description description">
-      <h1 class="description__title">Building a <span class="break break--1">better world</h1>
+      <h1 class="description__title"><span class="description__title--light">Building a </span><span class="break break--1">better world</h1>
       <a href="/about" class="description__button">LEARN MORE</a>
     </section>
     <section class="banner__image image">
@@ -26,14 +26,14 @@ get_header()
     </section>
   </div>
 </main>
-<div class="container">
+<div class="container container-landing">
   <div class="landing__information information">
+    <div class="eu-badge"></div>
     <h2 class="information__text">
       Exploring the possibilities in the Built World
       <span class="break"></span>
       by utilizing data and machine learning.
     </h2>
-    <div class="eu-badge"></div>
     <!-- <div class="information__links links">
       <a class="links__item" href="https://www.facebook.com/flownform/">Facebook</a>
       <a class="links__item" href="https://twitter.com/flownform?lang=en">Twitter</a>
@@ -42,72 +42,83 @@ get_header()
   </div>
   <div class="information__border"></div>
 </div>
-<section class="studies" id="featured">
-  <div class="studies__title title">
-    <h2 class="title__text">Our research</h2>
-  </div>
-  <?php
-  $args = array(
-    'posts_per_page' => 1,
-    'post__in' => get_option('sticky_posts'),
-    'ignore_sticky_posts' => 1
-  );
-  $query = new WP_Query($args);
-  while ($query->have_posts()) {
-    $query->the_post(); ?>
-    <section class="studies__featured-post featured-post">
-      <a href=<?php echo get_permalink(); ?>>
-        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>" class="featured-post__image">
-      </a>
-      <section class="info container">
-        <a class="featured-post__title" href=<?php echo get_permalink(); ?>>
-          <?php the_title(); ?>
+<?php
+$args = array(
+  'post_type' => 'post',
+  'post__not_in' => array($activePostId),
+  'orderby'    => 'date&order=DESC',
+  'post__not_in' => get_option('sticky_posts'),
+  'post_status' => 'publish',
+  'order'    => 'DESC',
+  'posts_per_page' => -1
+);
+$result = new WP_Query($args);
+?>
+<?php
+if ($result->have_posts()) : ?>
+  <section class="studies" id="featured">
+    <div class="studies__title title">
+      <h2 class="title__text">Our research</h2>
+    </div>
+    <?php
+    $args = array(
+      'posts_per_page' => 1,
+      'post__in' => get_option('sticky_posts'),
+      'ignore_sticky_posts' => 1
+    );
+    $query = new WP_Query($args);
+    while ($query->have_posts()) {
+      $query->the_post(); ?>
+      <section class="studies__featured-post featured-post">
+        <a href=<?php echo get_permalink(); ?>>
+          <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>" class="featured-post__image">
         </a>
-        <p class="featured-post__date">
-          <?php echo get_the_date(); ?>
-        </p>
+        <section class="info container">
+          <a class="featured-post__title" href=<?php echo get_permalink(); ?>>
+            <?php the_title(); ?>
+          </a>
+          <p class="featured-post__date">
+            <?php echo get_the_date(); ?>
+          </p>
+        </section>
+      </section>
+    <?php
+    }
+    wp_reset_postdata();
+    ?>
+  </section>
+  <section class="blog" id="blog">
+    <section class="container">
+      <section class="blog__posts posts posts--front-page">
+        <?php
+        if ($result->have_posts()) : ?>
+          <?php while ($result->have_posts()) : $result->the_post(); ?>
+            <?php $coming_soon = in_category('coming-soon') ?>
+            <section class="posts__post post <?php if ($coming_soon) : ?>coming-soon<?php endif ?>">
+              <a href=<?php echo get_permalink(); ?>>
+                <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>" class="post__image">
+              </a>
+              <section class="info">
+                <a href=<?php echo get_permalink(); ?> class="post__title">
+                  <?php if ($coming_soon) : ?>
+                    Coming soon
+                  <?php else : the_title() ?>
+                  <?php endif ?>
+                </a>
+                <p class="post__date">
+                  <?php if (!$coming_soon) : echo get_the_date();
+                  endif ?>
+                </p>
+              </section>
+            </section>
+          <?php endwhile; ?>
+        <?php endif;
+        wp_reset_postdata(); ?>
       </section>
     </section>
-  <?php
-  }
-  wp_reset_postdata();
-  ?>
-</section>
-<section class="blog" id="blog">
-  <section class="container">
-    <section class="blog__posts posts posts--front-page">
-      <?php
-      $args = array(
-        'post_type' => 'post',
-        'post__not_in' => array($activePostId),
-        'orderby'    => 'date&order=DESC',
-        'post__not_in' => get_option('sticky_posts'),
-        'post_status' => 'publish',
-        'order'    => 'DESC',
-        'posts_per_page' => -1
-      );
-      $result = new WP_Query($args);
-      if ($result->have_posts()) : ?>
-        <?php while ($result->have_posts()) : $result->the_post(); ?>
-          <section class="posts__post post">
-            <a href=<?php echo get_permalink(); ?>>
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>" class="post__image">
-            </a>
-            <section class="info">
-              <a href=<?php echo get_permalink(); ?> class="post__title">
-                <?php the_title(); ?>
-              </a>
-              <p class="post__date">
-                <?php echo get_the_date(); ?>
-              </p>
-            </section>
-          </section>
-        <?php endwhile; ?>
-      <?php endif;
-      wp_reset_postdata(); ?>
-    </section>
   </section>
-</section>
+<?php endif;
+?>
 <?php
 get_template_part('template-parts/newsletter');
 get_footer();

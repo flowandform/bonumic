@@ -274,3 +274,9 @@
     }
   }
 }
+
+.coming-soon {
+  filter: sepia(1);
+  pointer-events: none;
+  cursor: not-allowed;
+}
