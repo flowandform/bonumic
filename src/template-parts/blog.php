@@ -15,19 +15,7 @@
       <h2 class="blog__title">Continue reading</h2>
       <section class="blog__posts posts">
         <?php while ($result->have_posts()) : $result->the_post(); ?>
-          <section class="posts__post post">
-            <a href=<?php echo get_permalink(); ?>>
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php echo get_post_meta(get_post_thumbnail_id(), '_wp_attachment_image_alt', TRUE); ?>" class="post__image">
-            </a>
-            <section class="info">
-              <a href=<?php echo get_permalink(); ?> class="post__title">
-                <?php the_title(); ?>
-              </a>
-              <p class="post__date">
-                <?php echo get_the_date(); ?>
-              </p>
-            </section>
-          </section>
+          <?php get_template_part('template-parts/single-post-thumbnail'); ?>
         <?php endwhile; ?>
       </section>
     </section>

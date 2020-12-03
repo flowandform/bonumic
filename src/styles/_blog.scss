@@ -276,7 +276,6 @@
 }
 
 .coming-soon {
-  filter: sepia(1);
+  filter: grayscale(1);
   pointer-events: none;
-  cursor: not-allowed;
 }
