@@ -38,6 +38,6 @@ if (have_posts()) {
   }
 }
 get_template_part('template-parts/newsletter');
-get_template_part('template-parts/blog');
+get_template_part('template-parts/blog-on-single-template');
 get_footer();
 ?>

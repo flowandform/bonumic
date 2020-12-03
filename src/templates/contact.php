@@ -40,28 +40,8 @@ get_header()
 get_template_part('template-parts/newsletter');
 ?>
 <?php
-$args = array(
-  'post_type' => 'post',
-  'post__not_in' => array($activePostId),
-  'orderby'    => 'date&order=DESC',
-  'post__not_in' => get_option('sticky_posts'),
-  'post_status' => 'publish',
-  'order'    => 'DESC',
-  'posts_per_page' => -1
-);
-$result = new WP_Query($args);
-if ($result->have_posts()) : ?>
-  <section class="blog" id="blog">
-    <section class="container">
-      <section class="blog__posts posts posts--front-page">
-        <?php while ($result->have_posts()) : $result->the_post(); ?>
-          <?php get_template_part('template-parts/single-post-thumbnail'); ?>
-        <?php endwhile; ?>
-      <?php endif;
-    wp_reset_postdata(); ?>
-      </section>
-    </section>
-  </section>
-  <?php
-  get_footer();
-  ?>
+get_template_part('template-parts/blog');
+?>
+<?php
+get_footer();
+?>

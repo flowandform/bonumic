@@ -12,7 +12,7 @@
   $result = new WP_Query($args);
   if ($result->have_posts()) : ?>
     <section class="container">
-      <h2 class="blog__title">Start reading</h2>
+      <h2 class="blog__title">Continue reading</h2>
       <section class="blog__posts posts">
         <?php while ($result->have_posts()) : $result->the_post(); ?>
           <?php get_template_part('template-parts/single-post-thumbnail'); ?>
