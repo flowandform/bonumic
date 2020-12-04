@@ -38,19 +38,31 @@ get_header()
   <div class="information__border"></div>
 </div>
 <?php
-$args = array(
+$args_not_in_coming_soon = array(
   'post_type' => 'post',
   'post__not_in' => array($activePostId),
   'orderby'    => 'date&order=DESC',
   'post__not_in' => get_option('sticky_posts'),
   'post_status' => 'publish',
   'order'    => 'DESC',
-  'posts_per_page' => -1
+  'posts_per_page' => -1,
+  'category__not_in' => 3,
 );
-$result = new WP_Query($args);
+$args_coming_soon = array(
+  'post_type' => 'post',
+  'post__not_in' => array($activePostId),
+  'orderby'    => 'date&order=DESC',
+  'post__not_in' => get_option('sticky_posts'),
+  'post_status' => 'publish',
+  'order'    => 'DESC',
+  'posts_per_page' => -1,
+  'cat' => 3
+);
+$posts_not_in_coming_soon = new WP_Query($args_not_in_coming_soon);
+$coming_soon_posts = new WP_Query($args_coming_soon)
 ?>
 <?php
-if ($result->have_posts()) : ?>
+if ($posts_not_in_coming_soon->have_posts()) : ?>
   <section class="studies" id="featured">
     <div class="studies__title title">
       <h2 class="title__text">Our research</h2>
@@ -86,8 +98,15 @@ if ($result->have_posts()) : ?>
     <section class="container">
       <section class="blog__posts posts posts--front-page">
         <?php
-        if ($result->have_posts()) : ?>
-          <?php while ($result->have_posts()) : $result->the_post(); ?>
+        if ($posts_not_in_coming_soon->have_posts()) : ?>
+          <?php while ($posts_not_in_coming_soon->have_posts()) : $posts_not_in_coming_soon->the_post(); ?>
+            <?php get_template_part('template-parts/single-post-thumbnail'); ?>
+          <?php endwhile; ?>
+        <?php endif;
+        wp_reset_postdata(); ?>
+        <?php
+        if ($coming_soon_posts->have_posts()) : ?>
+          <?php while ($coming_soon_posts->have_posts()) : $coming_soon_posts->the_post(); ?>
             <?php get_template_part('template-parts/single-post-thumbnail'); ?>
           <?php endwhile; ?>
         <?php endif;

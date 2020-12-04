@@ -178,6 +178,11 @@
       }
     }
 
+    > ul {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
     > figure {
       max-width: 720px;
       margin: 0 auto;
@@ -186,6 +191,7 @@
       > img {
         display: block;
         width: 100%;
+        height: auto;
       }
 
       > figcaption {
