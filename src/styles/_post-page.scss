@@ -146,9 +146,17 @@
     > h2 {
       max-width: 720px;
       margin: 0 auto;
-
       margin-top: 80px;
       font-size: 40px;
+      font-weight: 500;
+      color: $dark-grey;
+    }
+
+    > h3 {
+      max-width: 720px;
+      margin: 0 auto;
+      margin-top: 64px;
+      font-size: 32px;
       font-weight: 500;
       color: $dark-grey;
     }
@@ -178,9 +186,16 @@
       }
     }
 
-    > ul {
+    > ul,
+    > ol {
       max-width: 720px;
       margin: 0 auto;
+      margin-top: 40px;
+      font-size: 22px;
+
+      > li {
+        margin-top: 16px;
+      }
     }
 
     > figure {
@@ -329,9 +344,26 @@
         line-height: 1.42;
       }
 
+      > h3 {
+        margin-top: 28px;
+        margin-bottom: -16px;
+        font-size: 24px;
+        line-height: 1.42;
+      }
+
       > p {
         font-size: 18px;
         line-height: 1.64em;
+      }
+
+      > ul,
+      > ol {
+        margin-top: 28px;
+        font-size: 18px;
+
+        > li {
+          margin-top: 10px;
+        }
       }
 
       > figure {
