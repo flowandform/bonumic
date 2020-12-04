@@ -7,7 +7,8 @@
     'order' => 'DESC',
     'post_status' => 'publish',
     'ignore_sticky_posts' => 1,
-    'posts_per_page' => 2
+    'posts_per_page' => 2,
+    'category__not_in' => 3,
   );
   $result = new WP_Query($args);
   if ($result->have_posts()) : ?>
