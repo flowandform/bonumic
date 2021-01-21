@@ -4,7 +4,7 @@ get_header()
 <main class="landing">
   <div class="landing__banner banner">
     <section class="banner__description description">
-      <h1 class="description__title"><span class="description__title--light">Building a </span><span class="break break--1">better world</h1>
+      <h1 class="description__title"><span class="description__title--light">Real Estate</span><span class="break break--1">AI research</h1>
       <a href="/about" class="description__button">LEARN MORE</a>
     </section>
     <section class="banner__image image">
