@@ -25,9 +25,7 @@ get_header()
   <div class="landing__information information">
     <div class="eu-badge"></div>
     <h2 class="information__text">
-      Exploring the possibilities in the Built World
-      <span class="break"></span>
-      by utilizing data and machine learning.
+      Discovering the path to the advanced<span class="break"></span>artificial intelligence in the real estate industry.
     </h2>
     <!-- <div class="information__links links">
       <a class="links__item" href="https://www.facebook.com/flownform/">Facebook</a>

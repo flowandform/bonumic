@@ -33,11 +33,11 @@
       line-height: 1.5em;
       margin-left: auto;
 
-      > p {
+      >p {
         margin: 0;
         display: inline-block;
 
-        > span {
+        >span {
           padding: 0 5px;
         }
       }
@@ -101,7 +101,7 @@
   }
 
   &__featured-image {
-    > img {
+    >img {
       display: block;
       margin-top: 48px;
       width: 100%;
@@ -123,10 +123,10 @@
       line-height: 1.25em;
 
       .enlighter {
-        > div {
+        >div {
           background: $dark-grey;
 
-          > div {
+          >div {
             padding-left: 20px;
             padding-right: 20px;
           }
@@ -143,7 +143,7 @@
       }
     }
 
-    > h2 {
+    >h2 {
       max-width: 720px;
       margin: 0 auto;
       margin-top: 80px;
@@ -152,7 +152,7 @@
       color: $dark-grey;
     }
 
-    > h3 {
+    >h3 {
       max-width: 720px;
       margin: 0 auto;
       margin-top: 64px;
@@ -161,20 +161,20 @@
       color: $dark-grey;
     }
 
-    > p {
+    >p {
       max-width: 720px;
       margin: 0 auto;
 
       margin-top: 40px;
       line-height: 1.64em;
-      font-size: 22px;
+      font-size: 20px;
       color: $dark-grey;
 
-      > sup {
+      >sup {
         font-size: 16px;
       }
 
-      > a {
+      >a {
         color: $dark-grey;
         border: 2px solid $white;
         transition: border-color 0.2s;
@@ -186,30 +186,30 @@
       }
     }
 
-    > ul,
-    > ol {
+    >ul,
+    >ol {
       max-width: 720px;
       margin: 0 auto;
       margin-top: 40px;
-      font-size: 22px;
+      font-size: 20px;
 
-      > li {
+      >li {
         margin-top: 16px;
       }
     }
 
-    > figure {
+    >figure {
       max-width: 720px;
       margin: 0 auto;
       margin-top: 64px;
 
-      > img {
+      >img {
         display: block;
         width: 100%;
         height: auto;
       }
 
-      > figcaption {
+      >figcaption {
         margin: 0;
         margin-top: 16px;
         font-size: 18px;
@@ -231,7 +231,7 @@
     .footnote {
       font-size: 16px;
 
-      > a {
+      >a {
         text-decoration: none;
         color: $dark-grey;
         font-weight: 700;
@@ -249,7 +249,7 @@
         left: 0;
         top: -8px;
 
-        > a {
+        >a {
           padding: 5px 5px 5px 0;
         }
       }
@@ -258,10 +258,10 @@
 }
 
 .easy-footnote {
-  > a {
+  >a {
     text-decoration: none;
 
-    > sup {
+    >sup {
       color: $dark-grey;
       font-family: "DM Sans";
       font-size: 16px;
@@ -315,7 +315,7 @@
     }
 
     &__featured-image {
-      > img {
+      >img {
         width: 100vw;
         padding-left: 0;
         padding-right: 0;
@@ -329,7 +329,7 @@
         font-size: 12px;
 
         .enlighter {
-          > div {
+          >div {
             span {
               font-size: 12px;
             }
@@ -337,39 +337,39 @@
         }
       }
 
-      > h2 {
+      >h2 {
         margin-top: 42px;
         margin-bottom: -16px;
         font-size: 30px;
         line-height: 1.42;
       }
 
-      > h3 {
+      >h3 {
         margin-top: 28px;
         margin-bottom: -16px;
         font-size: 24px;
         line-height: 1.42;
       }
 
-      > p {
+      >p {
         font-size: 18px;
         line-height: 1.64em;
       }
 
-      > ul,
-      > ol {
+      >ul,
+      >ol {
         margin-top: 28px;
         font-size: 18px;
 
-        > li {
+        >li {
           margin-top: 10px;
         }
       }
 
-      > figure {
+      >figure {
         margin-top: 40px;
 
-        > figcaption {
+        >figcaption {
           font-size: 14px;
         }
       }
@@ -400,7 +400,7 @@
 @include media(x-large) {
   .single-post {
     &__featured-image {
-      > img {
+      >img {
         padding-left: $side-gutter-x-large;
         padding-right: $side-gutter-x-large;
       }
@@ -447,7 +447,7 @@
     }
 
     &__featured-image {
-      > img {
+      >img {
         padding-left: $side-gutter-tablet;
         padding-right: $side-gutter-tablet;
         margin-top: 32px;
@@ -460,7 +460,7 @@
         font-size: 12px;
 
         .enlighter {
-          > div {
+          >div {
             span {
               font-size: 12px;
             }
@@ -468,22 +468,22 @@
         }
       }
 
-      > h2 {
+      >h2 {
         margin-top: 36px;
         margin-bottom: -16px;
         font-size: 36px;
         line-height: 1.42;
       }
 
-      > p {
+      >p {
         font-size: 20px;
         line-height: 2em;
       }
 
-      > figure {
+      >figure {
         margin-top: 68px;
 
-        > figcaption {
+        >figcaption {
           font-size: 16px;
         }
       }

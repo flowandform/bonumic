@@ -44,7 +44,10 @@ get_header()
     <article class="info__block block">
       <h3 class="block__title">The Mission</h3>
       <p class="block__description">
-        We are creating a research and case studies where we share the knowledge, data and resources on solving burning challenges in various real estate verticals using machine learning and AI.
+        Our mission is to improve the way we build, operate and trade real estate assets by harnessing the power of deep learning and artificial intelligence.
+      </p>
+      <p class="block__description">
+        We are determined to organize, structure and utilize the worlds real estate data in a meaningful way, enable an open-source and transparent access to research  and ensure a safe path to advanced artificial intelligence in the real estate industry.
       </p>
     </article>
   </section>
