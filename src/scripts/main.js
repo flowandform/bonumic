@@ -33,7 +33,7 @@ function copyTextToClipboard(text) {
     $(".js-headroom").headroom(options);
 
     mapboxgl.accessToken =
-      "sk.eyJ1IjoiZmxvd25hZGZvcm0iLCJhIjoiY2tmbWl0azNhMDNwdjJ5bXFkODRuYWVwOCJ9.JsUBIY6gY9lXGRYlX3jptQ";
+      "pk.eyJ1IjoiaGFzZWxudXNzIiwiYSI6ImNrOXZyc2Y4ZzAxeWMzZXFzNHkyMmp0cjQifQ.QRQfmIBMs8CWBz3wuyaEZA";
 
     function drawMapbox(container, dataSource) {
       var map = new mapboxgl.Map({
@@ -51,7 +51,7 @@ function copyTextToClipboard(text) {
     if ($(".bonumic-map").length) {
       $(".bonumic-map").each(function (index) {
         var container = $(this).attr("id");
-        var dataSource = $(this).data("style");
+        var dataSource = $(this).data("style") || "mapbox://styles/haselnuss/ckc4lpr400trl1jn413z9dbug";
         drawMapbox(container, dataSource);
       });
     }
