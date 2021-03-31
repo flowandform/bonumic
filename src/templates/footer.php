@@ -5,7 +5,7 @@
         <a href="/">
           <img class="footer__logo" src="/wp-content/themes/bonumic/assets/images/logo-white.svg" alt="logo" />
         </a>
-        <div class="eu-badge eu-badge--white"></div>
+        <a href="/eu-project" class="eu-badge eu-badge--white"></a>
       </div>
       <nav class="navbar">
         <div class="column">

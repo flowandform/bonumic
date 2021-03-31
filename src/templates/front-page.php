@@ -23,7 +23,7 @@ get_header()
 </main>
 <div class="container container-landing">
   <div class="landing__information information">
-    <div class="eu-badge"></div>
+    <a href="/eu-project" class="eu-badge"></a>
     <h2 class="information__text">
       Discovering the path to the advanced<span class="break"></span>artificial intelligence in the real estate industry.
     </h2>
