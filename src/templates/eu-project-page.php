@@ -15,43 +15,83 @@ get_header()
     <p class="content__text">The project proposal "Adaptation and commercialization of the innovative Bonumic platform" is being implemented with the aim of adapting and launching the innovative technology platform Bonumic. The development of the Bonumic platform (https://bonumic.com) began in 2017, starting with the founders' idea of creating solutions that would facilitate the application of machine learning and create a community of experts for this still relatively underdeveloped area. The growing global interest in the application of machine learning is caused by the high availability of data whose analysis and use for problem solving and decision making can be the subject of achieving better results, competitive advantage and even saving lives. The use of artificial intelligence and machine learning in the development of software solutions is a time-consuming and complex process if there are no ready-made models and solutions (templates) that are used to accelerate development steps. The experience of developing such applications in the classic way and the longevity of the process motivated the Applicant to develop its own platform that will bring machine learning closer to users, and thus create a central place for technology experts and scientists. This will centralize knowledge of machine learning and provide a basis for innovation and new ideas on a global scale. </p>
     <h5 class="content__subtitle">The project included the following activities:</h5>
     <ol type="a">
-      <li><p style="margin-left: 10px;" class="content__text">Adaptation of the innovative platform to market requirements;</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">Preparation for launching the platform on the market;</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">Project management</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">Promotion and visibility.</p></li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Adaptation of the innovative platform to market requirements;</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Preparation for launching the platform on the market;</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Project management</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Promotion and visibility.</p>
+      </li>
     </ol>
     <h5 class="content__subtitle">Objectives and expected results of the project</h5>
     <p class="content__text">The overall goal of the project is to contribute to the development of the Applicant and the successful transfer of innovative ideas into a business venture ready for the global market.</p>
     <h5 class="content__subtitle">The Bonumic platform offers several key features for users:</h5>
     <ol type="a">
-      <li><p style="margin-left: 10px;" class="content__text">Knowledge base of ready-made models, data sets, research, data and materials for creating solutions based on machine learning,</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">Knowledge base of professional articles, studies, blogs, tutorials and educational materials for learning,</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">Collaboration, networking and joint work of experts and the scientific community.</p></li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Knowledge base of ready-made models, data sets, research, data and materials for creating solutions based on machine learning,</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Knowledge base of professional articles, studies, blogs, tutorials and educational materials for learning,</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Collaboration, networking and joint work of experts and the scientific community.</p>
+      </li>
     </ol>
     <h5 class="content__subtitle">The specific objectives of the project are:</h5>
     <ol type="a">
-      <li><p style="margin-left: 10px;" class="content__text">Increase in sales revenue;</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">Increasing the capacity to provide services;</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">Support to the development of the information society in the Republic of Croatia.</p></li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Increase in sales revenue;</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Increasing the capacity to provide services;</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Support to the development of the information society in the Republic of Croatia.</p>
+      </li>
     </ol>
     <h5 class="content__subtitle">Implementation has positive effects on:</h5>
     <ol type="a">
-      <li><p style="margin-left: 10px;" class="content__text">Further development of the Applicant's company and strengthening of employee capacity,</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">Dissemination of knowledge and progress of the industry of software solutions based on machine learning,</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">Academic community in the form of dissemination of knowledge and cooperation base,</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">Economic progress of the Republic of Croatia.</p></li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Further development of the Applicant's company and strengthening of employee capacity,</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Dissemination of knowledge and progress of the industry of software solutions based on machine learning,</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Academic community in the form of dissemination of knowledge and cooperation base,</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">Economic progress of the Republic of Croatia.</p>
+      </li>
     </ol>
     <h5 class="content__subtitle">Sustainability of results after the completion of the project will be realized through several different aspects:</h5>
     <ol type="a">
-      <li><p style="margin-left: 10px;" class="content__text">financial sustainability;</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">maintenance of business solutions and their future upgrade;</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">market sustainability.</p></li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">financial sustainability;</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">maintenance of business solutions and their future upgrade;</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">market sustainability.</p>
+      </li>
     </ol>
     <h2 class="content__title">Total project value and amount co-financed by the EU (in HRK)</h2>
     <ul>
-      <li><p style="margin-left: 10px;" class="content__text">The total value of the project is HRK 1,559,633.75</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">The total value of the project (eligible costs) is 1,308,573.00 HRK</p></li>
-      <li><p style="margin-left: 10px;" class="content__text">The EU share in project financing amounts to HRK 1,112,273.95</p></li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">The total value of the project is HRK 1,559,633.75</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">The total value of the project (eligible costs) is 1,308,573.00 HRK</p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text">The EU share in project financing amounts to HRK 1,112,273.95</p>
+      </li>
     </ul>
     <h2 class="content__title">Project implementation period</h2>
     <p class="content__text">01.09.2019 - 01.03.2021.</p>
@@ -64,9 +104,17 @@ get_header()
     </p>
     <h5 class="content__subtitle">Links</h5>
     <ul>
-      <li><p style="margin-left: 10px;" class="content__text"><a href="https://strukturnifondovi.hr/">https://strukturnifondovi.hr/</a></p></li>
-      <li><p style="margin-left: 10px;" class="content__text"><a href="https://strukturnifondovi.hr/eu-fondovi/esi-fondovi-2014-2020/op-konkurentnost-i-kohezija/">https://strukturnifondovi.hr/eu-fondovi/esi-fondovi-2014-2020/op-konkurentnost-i-kohezija/</a></p></li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text"><a href="https://strukturnifondovi.hr/">https://strukturnifondovi.hr/</a></p>
+      </li>
+      <li>
+        <p style="margin-left: 10px;" class="content__text"><a href="https://strukturnifondovi.hr/eu-fondovi/esi-fondovi-2014-2020/op-konkurentnost-i-kohezija/">https://strukturnifondovi.hr/eu-fondovi/esi-fondovi-2014-2020/op-konkurentnost-i-kohezija/</a></p>
+      </li>
     </ul>
+    <div class="eu-logos">
+      <img src="/wp-content/themes/bonumic/assets/images/cef-eu-black.svg" class="eu-logos__img" />
+      <img src="/wp-content/themes/bonumic/assets/images/eulogo2.png" class="eu-logos__img eu-logos__img--second" />
+    </div>
   </section>
 </main>
 <section class="blog">

@@ -114,3 +114,18 @@ h5 {
     }
   }
 }
+
+.eu-logos {
+  margin-top: 60px;
+
+  &__img {
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+
+    &--second {
+      margin-top: 10px;
+    }
+  }
+}
