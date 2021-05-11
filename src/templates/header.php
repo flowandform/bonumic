@@ -40,6 +40,10 @@
           HOME
           <span class="navbar__underline <?php if (is_page('home')) echo 'is-active'; ?>"></span>
         </a>
+        <a href="https://app.bonumic.com" class="navbar__item">
+          PLATFORM
+          <span class="navbar__underline <?php if (is_page('about')) echo 'is-active'; ?>"></span>
+        </a>
         <a href="/about" class="navbar__item">
           ABOUT
           <span class="navbar__underline <?php if (is_page('about')) echo 'is-active'; ?>"></span>
@@ -55,6 +59,11 @@
       <li class="burger-menu__item">
         <a href="/" class="link">
           <div class="link__name">HOME</div>
+        </a>
+      </li>
+      <li class="burger-menu__item">
+        <a href="https://app.bonumic.com" class="link">
+          <div class="link__name">PLATFORM</div>
         </a>
       </li>
       <li class="burger-menu__item">

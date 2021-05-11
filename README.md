@@ -26,6 +26,8 @@ To run development server
 yarn start
 ```
 
+Available on localhost:8000
+
 ## Build
 
 ```
